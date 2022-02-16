@@ -1,12 +1,8 @@
 ## Práctica Final Despliegue de Aplicaciones Web
 
-You can use the [editor on GitHub](https://github.com/Neiroh/neiroh.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+Esta página web estática contiene todas las tareas que hemos ido realizando en la práctica sobre el servidor de la clase.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
