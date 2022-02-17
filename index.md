@@ -27,6 +27,46 @@ _Realizado por Raúl Arce_
 
 ## Servidores a Desplegar y sus Tutoriales
 
+#### GLPI (Apache HTTP Server).
+1. inventario.puertas.local
+2. Sitio web seguro con certificado, sitio no seguro redirige al seguro.
+3. Usuario: glpi, con contraseña glpi.Puertas que sirva para el usuario del
+sistema (directorio home /var/www/glpi), FTP, SSH y para su base de datos
+de MySQL.
+
+---
+
+#### Moodle (Apache HTTP Server).
+1. cursos.puertas.local
+2. Sitio web seguro con certificado, y sitio no seguro no redirige.
+3. Usuario: moodle, con contraseña moodle.Puertas que sirva para el usuario
+del sistema (directorio home /var/www/moodle), FTP, SSH y para su base de
+datos de MySQL.
+
+---
+
+#### PHPMyAdmin.
+1. mysql.puertas.local
+2. Sitio web seguro con certificado, y sitio no seguro no redirige.
+3. Usuario: bbdd, con contraseña mysql.Puertas que sirva para el usuario del
+sistema (directorio home /var/www/phpmyadmin), FTP, SSH y para todas las
+bases de datos de MySQL.
+
+---
+
+#### OpenCMS (Apache Tomcat).
+1. opencms.puertas.local
+2. Usuario: opencms, con contraseña opencms.Puertas que sirva para el
+usuario del sistema, FTP, SSH y para su base de datos de MySQL.
+
+---
+
+#### Prestashop (imagen de Docker que genere una instancia de Prestashop con la creación de su base de datos al lanzar un contenedor). Generar cuatro tiendas.
+1. tienda01.puertas.local
+2. tienda02.puertas.local
+3. tienda03.puertas.local
+4. tienda04.puertas.local
+
 ```markdown
 Syntax highlighted code block
 
