@@ -25,7 +25,10 @@ _Realizado por Ahmed_
 - Mysql Server
 _Realizado por Raúl Arce_
 
-## Servidores a Desplegar y sus Tutoriales
+- Página de Github
+_Realizado por Raúl Arce_
+
+## Servidores a Desplegar y sus Tutoriales | Requisitos
 
 #### GLPI (Apache HTTP Server).
 1. inventario.puertas.local
@@ -66,6 +69,22 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 2. tienda02.puertas.local
 3. tienda03.puertas.local
 4. tienda04.puertas.local
+
+---
+---
+---
+
+## Instalación y Configuración MySQL Server
+- Raúl Fernández Arce
+
+1. Instalamos MySQL-server por linea de comandos.
+
+`sudo apt install mysql-server`
+
+Nos saltará la siguiente imagen, solo debemos seguir las indicaciones.
+
+![Primera_Ventana_mysqlServer](./mysqlServidor/mysqlserver1)
+
 
 ```markdown
 Syntax highlighted code block
