@@ -83,8 +83,27 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 
 Nos saltará la siguiente imagen, solo debemos seguir las indicaciones.
 
-![Primera_Ventana_mysqlServer](./mysqlServidor/mysqlserver1)
+![Primera_Ventana_mysqlServer](/mysqlServidor/mysqlserver1)
 
+2. Realizamos la instalación segura de MySQL mediante el siguiente comando, para darle una contraseña al root y editar algunos parámetros:
+
+`sudo mysql_secure_installation`
+
+El resultado de escribir ese comando es la solicitud de una contraseña para el usuario root de MySQL
+
+[Solicitud_passwd](/mysqlServidor/instalacionSegura)
+
+Y al escribir la contraseña nos pedirá que confirmemos una serie de parámetros:
+
+1. Nos pide confirmar si estamos seguros de usar esa contraseña.
+
+2. Borrar los usuarios anónimos.
+
+3. Deshabilitar el acceso remoto del root, algo que es recomendable aceptar, y crear nosotros mismos nuestros usuarios para acceder a mysql.
+
+4. Eliminar las bases de datos de prueba.
+
+[Instalación_segura](/mysqlServidor/mysqlserver4)
 
 ```markdown
 Syntax highlighted code block
