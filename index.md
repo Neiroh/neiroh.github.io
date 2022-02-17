@@ -22,13 +22,13 @@ _Realizado por Jseús Roca_
 - PHP
 _Realizado por Ahmed_
 
-- Mysql Server
+- [Mysql Server](#mysql)
 _Realizado por Raúl Arce_
 
 - Página de Github
 _Realizado por Raúl Arce_
 
-## Servidores a Desplegar y sus Tutoriales | Requisitos
+## Servidores a Desplegar | Requisitos
 
 #### GLPI (Apache HTTP Server).
 1. inventario.puertas.local
@@ -73,6 +73,8 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 ---
 ---
 ---
+
+<a name="mysql"></a>
 
 ## Instalación y Configuración MySQL Server
 - Raúl Fernández Arce
