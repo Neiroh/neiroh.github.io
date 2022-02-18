@@ -17,7 +17,7 @@ _Realizado por Jesús Ruiz_
 _Realizado por Josema_
 
 - [SSH](#ssh)
-_Realizado por Jseús Roca_
+_Realizado por Jesús Roca_
 
 - [PHP](#php)
 _Realizado por Ahmed_
