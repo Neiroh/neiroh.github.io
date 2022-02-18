@@ -13,7 +13,7 @@ _Realizado por José Carlos_
 - Docker
 _Realizado por Jesús Ruiz_
 
-- FTP Server
+- [FTP Server](#ftp)
 _Realizado por Josema_
 
 - SSH
@@ -79,7 +79,7 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 ## Instalación y Configuración MySQL Server
 - Raúl Fernández Arce
 
-1. Instalamos MySQL-server por linea de comandos.
+1. #### Instalamos MySQL-server por linea de comandos.
 
 `sudo apt install mysql-server`
 
@@ -87,7 +87,7 @@ Nos saltará la siguiente imagen, solo debemos seguir las indicaciones.
 
 ![Primera_Ventana_mysqlServer](/mysqlServidor/mysqlserver1.png)
 
-2. Realizamos la instalación segura de MySQL mediante el siguiente comando, para darle una contraseña al root y editar algunos parámetros:
+2. #### Realizamos la instalación segura de MySQL mediante el siguiente comando, para darle una contraseña al root y editar algunos parámetros:
 
 `sudo mysql_secure_installation`
 
@@ -106,6 +106,27 @@ Y al escribir la contraseña nos pedirá que confirmemos una serie de parámetro
 4. Eliminar las bases de datos de prueba.
 
 ![Instalación_segura](/mysqlServidor/mysqlserver4.png)
+
+3. #### Iniciamos sesión y creamos los usuarios
+
+Para iniciar sesión usamos el comando:
+
+`sudo mysql -u root -p`
+
+Tras esto nos solicitará la contraseña que hemos escrito al realizar la instalación segura, y al ingresarla nos abrirá la línea de comandos de mysql server.
+
+Al crear usuarios, si queremos usar contraseñas no seguras, deberemos escribir el siguiente comando:
+
+`UNINSTALL COMPONENT "file://component_validate_password"`
+
+Y con esto podremos usar la contraseña que queramos, sin importar su seguridad, algo que hemos puesto en práctica para la creación de nuestros usuarios.
+
+<a name="ftp"></a>
+
+## FTP + Creación de Usuarios
+
+##
+
 
 ```markdown
 Syntax highlighted code block
