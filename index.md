@@ -141,10 +141,29 @@ Tras esto nos solicitará la contraseña que hemos escrito al realizar la instal
 
 Al crear usuarios, si queremos usar contraseñas no seguras, deberemos escribir el siguiente comando:
 
-`UNINSTALL COMPONENT "file://component_validate_password"`
+`UNINSTALL COMPONENT "file://component_validate_password";`
 
 Y con esto podremos usar la contraseña que queramos, sin importar su seguridad, algo que hemos puesto en práctica para la creación de nuestros usuarios.
 
+![Creación de usuarios](/mysqlServidor/users1.png)
+
+Y con la consulta
+
+`SELECT user FROM mysql.user;`
+
+podemos visualizar los usuarios que tenemos creados
+
+![lista de usuarios](/mysqlServidor/users2.png)
+
+Y al finalizar la creación de usuarios instalamos el componente de validación de contraseñas de nuevo:
+
+`INSTALL COMPONENT "file://component_validate_password"`
+
+Ahora damos permisos a los usuarios para que puedan tener todos los permisos en el acceso y las bases de datos con el comando:
+
+`GRANT ALL ON *.* TO "usuario"@"localhost";`
+
+Y con esto ya hemos finalizado la instalación y configuración de los usuarios de MySQL server
 
 ```markdown
 Syntax highlighted code block
