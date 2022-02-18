@@ -4,22 +4,22 @@ Esta página web estática contiene todas las tareas que hemos ido realizando en
 
 ## Listado de Componentes Necesarios y sus Responsables
 
-- Apache HTTPD Server
+- [Apache HTTPD Server](#httpd)
 _Realizado por Emilio_
 
-- Apache Tomcat
+- [Apache Tomcat](#tomcat)
 _Realizado por José Carlos_
 
-- Docker
+- [Docker](#docker)
 _Realizado por Jesús Ruiz_
 
 - [FTP Server](#ftp)
 _Realizado por Josema_
 
-- SSH
+- [SSH](#ssh)
 _Realizado por Jseús Roca_
 
-- PHP
+- [PHP](#php)
 _Realizado por Ahmed_
 
 - [Mysql Server](#mysql)
@@ -74,6 +74,30 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 ---
 ---
 
+<a name="httpd"></a>
+
+## Apache HTTPD Server
+
+<a name="tomcat"></a>
+
+## Apache Tomcat
+
+<a name="docker"></a>
+
+## Docker
+
+<a name="ftp"></a>
+
+## FTP + Creación de Usuarios
+
+<a name="ssh"></a>
+
+## SSH
+
+<a name="php"></a>
+
+## PHP
+
 <a name="mysql"></a>
 
 ## Instalación y Configuración MySQL Server
@@ -120,12 +144,6 @@ Al crear usuarios, si queremos usar contraseñas no seguras, deberemos escribir 
 `UNINSTALL COMPONENT "file://component_validate_password"`
 
 Y con esto podremos usar la contraseña que queramos, sin importar su seguridad, algo que hemos puesto en práctica para la creación de nuestros usuarios.
-
-<a name="ftp"></a>
-
-## FTP + Creación de Usuarios
-
-##
 
 
 ```markdown
