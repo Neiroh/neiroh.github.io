@@ -81,6 +81,78 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 <a name="tomcat"></a>
 
 ## Apache Tomcat
+- Jose Carlos Vicario Cobos
+  
+  1. #### Instalamos el servidor Tomcat y todos sus componentes mediante la terminal
+   `sudo apt install tomcat9*`
+
+![Comando_Tomcat](/tomcat/image4.png)
+
+  2. #### Modificamos el puerto por el que trabaja Tomcat al 8081
+
+![Ventana_Server_Tomcat](/tomcat/image6.png)
+
+  3. #### Crear el usuario OpenCMS para Tomcat
+
+![Ventana_Users_Tomcat](/tomcat/image3.png)
+
+  4. #### Modificar el tamaño máximo de subida de Tomcat manager
+
+Es necesario modificar el tamaño máximo de subida del manager de Tomcat; el tamaño por defecto es 50MB, mientras que el archivo .war de OpenCMS es de unos 250MB. Por lo tanto, hasta que no se modifique este límite no se podrá subir y desplegar la aplicación.
+
+![Primera_Ventana_Manager_Tomcat](/tomcat/image1.png)
+
+![Segunda_Ventana_Manager_Tomcat](/tomcat/image10.png)
+
+  5. #### Subimos mediante el manager el archivo .war de OpenCMS
+
+![ManagerWeb_Tomcat](/tomcat/image15.png)
+
+Y una vez subido, aparece desplegado con el resto de aplicaciones...
+
+![ManagerWeb_Tomcat2](/tomcat/image2.png)
+
+  6. #### Crear un usuario para OpenCMS en MySQL, instalación del conector de Java para MySQL
+OpenCMS necesita un usuario para crear y gestionar sus bases de datos, lo creamos mediante el terminal.
+
+![MySQL_Tomcat](/tomcat/image11.png)
+
+Además, para comunicar Java con MySQL, necesitamos instalar un conector específico. Para poder instalar este paquete, primero necesitaremos añadirlo con el comando
+
+`sudo dpkg -i mysql-connector-java_8.0.28-1ubuntu21.10_all.deb`
+
+![MySQL_DPKGJava](/tomcat/image16.png)
+
+![MySQL_Java](/tomcat/image9.png)
+
+  7. #### Instalación de OpenCMS
+
+Accedemos a la configuración con la ruta
+
+`/opencms/setup`
+
+![Setup_OpenCMS](/tomcat/image12.png)
+
+Se nos muestran las opciones del servidor...
+
+![Setup_OpenCMSID](/tomcat/image7.png)
+
+Conectamos OpenCMS con nuestra base de datos...
+
+![Setup_OpenCMSDB](/tomcat/image8.png)
+
+Esperamos a que se termine la instalación
+
+![Setup_OpenCMSFinal](/tomcat/image5.png)
+
+Y, por último, se nos redirige a la página principal de OpenCMS
+
+![Setup_OpenCMSIntro](/tomcat/image13.png)
+
+...Y añadimos un usuario opencms
+
+![Setup_OpenCMSUser](/tomcat/image14.png)
+
 
 <a name="docker"></a>
 
