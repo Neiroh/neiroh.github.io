@@ -162,6 +162,26 @@ Y, por último, se nos redirige a la página principal de OpenCMS
 
 ## FTP + Creación de Usuarios
 
+#### Creación de usuarios
+
+Usuario GLPI
+![usuario_glpi](/ftp/1.png)
+
+Usuario Moodle
+![usuario_moodle](/ftp/2.png)
+
+Usuario Opencms
+![usuario_opencms](/ftp/3.png)
+
+#### Añadimos a los usuarios
+
+Añadimos al uduario glpi, la ruta de home, debe apuntar a /var/www/carpeta. Esto pasa con todos.
+![añadiendo_glpi](/ftp/4.png)
+
+Añadimos al usuario moodle.
+![añadiendo_moodle](/ftp/5.png)
+
+
 <a name="ssh"></a>
 
 ## SSH, información, instalación y funcionamiento.
