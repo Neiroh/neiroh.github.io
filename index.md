@@ -164,7 +164,53 @@ Y, por último, se nos redirige a la página principal de OpenCMS
 
 <a name="ssh"></a>
 
-## SSH
+## SSH, información, instalación y funcionamiento.
+- Jesús Roca Obispo
+
+1. #### Definición.
+
+SSH es ampliamente conocido por ser el protocolo seguro para la administración remota de servidores, routers, switches y un largo etcétera de equipos. El protocolo SSH permite manejar por completo el servidor o dispositivo de red mediante un intérprete de órdenes, además, también podemos redirigir el tráfico de X para ejecutar programas gráficos a través de la propia sesión SSH.
+
+2. #### Otras características fundamentales.
+
+Podemos copiar de manera segura, tanto archivos como carpetas, a través del protocolo SFTP, un protocolo hecho desde cero y que no tiene nada que ver con FTPS o FTPES.
+
+El protocolo SSH proporciona confidencialidad (datos encriptados, cifrados punto a punto), autenticación (con usuario/contraseña, claves pública/privada), integridad (si los datos se modifican o los modifica un usuario malintencionado se podrá detectar).
+
+3. #### Instalación de OpenSSH y funcionamiento en ubuntu.
+
+Primero actualizamos los paquetes:
+
+`sudo apt update`
+
+Para instalar SSH:
+
+`sudo apt install openssh-server`
+
+Configuración del servidor SSH, se ubica en /etc/ssh/sshd_config:
+
+INSERTAR CAPTURA SSH1
+
+Para configurar las claves criptográficas configuramos el directorio: /home/usuario/.ssh/
+
+Para arrancar el servidor usamos el comando:
+
+`sudo /etc/init.d/ssh start`
+
+Para pararlo:
+
+`sudo /etc/init.d/ssh stop`
+
+Para reiniciar el servidor:
+
+`sudo /etc/init.d/ssh restart`
+
+Para acceder a otro equipo mediante SSH usamos el comando:
+
+`ssh “nombre usuario”@”IP:servidor”`
+
+Luego nos pedirá la contraseña del equipo al que queremos acceder.
+
 
 <a name="php"></a>
 
