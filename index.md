@@ -83,20 +83,20 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 ## Apache Tomcat
 - Jose Carlos Vicario Cobos
   
-  1. #### Instalamos el servidor Tomcat y todos sus componentes mediante la terminal
+   #### 1. Instalamos el servidor Tomcat y todos sus componentes mediante la terminal
    `sudo apt install tomcat9*`
 
 ![Comando_Tomcat](/tomcat/image4.png)
 
-  2. #### Modificamos el puerto por el que trabaja Tomcat al 8081
+   #### 2. Modificamos el puerto por el que trabaja Tomcat al 8081
 
 ![Ventana_Server_Tomcat](/tomcat/image6.png)
 
-  3. #### Crear el usuario OpenCMS para Tomcat
+   #### 3. Crear el usuario OpenCMS para Tomcat
 
 ![Ventana_Users_Tomcat](/tomcat/image3.png)
 
-  4. #### Modificar el tamaño máximo de subida de Tomcat manager
+  #### 4. Modificar el tamaño máximo de subida de Tomcat manager
 
 Es necesario modificar el tamaño máximo de subida del manager de Tomcat; el tamaño por defecto es 50MB, mientras que el archivo .war de OpenCMS es de unos 250MB. Por lo tanto, hasta que no se modifique este límite no se podrá subir y desplegar la aplicación.
 
@@ -104,7 +104,7 @@ Es necesario modificar el tamaño máximo de subida del manager de Tomcat; el ta
 
 ![Segunda_Ventana_Manager_Tomcat](/tomcat/image10.png)
 
-  5. #### Subimos mediante el manager el archivo .war de OpenCMS
+  #### 5. Subimos mediante el manager el archivo .war de OpenCMS
 
 ![ManagerWeb_Tomcat](/tomcat/image15.png)
 
