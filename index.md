@@ -83,20 +83,20 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 ## Apache Tomcat
 - Jose Carlos Vicario Cobos
   
-   #### 1. Instalamos el servidor Tomcat y todos sus componentes mediante la terminal
+   #### Instalamos el servidor Tomcat y todos sus componentes mediante la terminal
    `sudo apt install tomcat9*`
 
 ![Comando_Tomcat](/tomcat/image4.png)
 
-   #### 2. Modificamos el puerto por el que trabaja Tomcat al 8081
+   #### Modificamos el puerto por el que trabaja Tomcat al 8081
 
 ![Ventana_Server_Tomcat](/tomcat/image6.png)
 
-   #### 3. Crear el usuario OpenCMS para Tomcat
+   #### Crear el usuario OpenCMS para Tomcat
 
 ![Ventana_Users_Tomcat](/tomcat/image3.png)
 
-  #### 4. Modificar el tamaño máximo de subida de Tomcat manager
+  #### Modificar el tamaño máximo de subida de Tomcat manager
 
 Es necesario modificar el tamaño máximo de subida del manager de Tomcat; el tamaño por defecto es 50MB, mientras que el archivo .war de OpenCMS es de unos 250MB. Por lo tanto, hasta que no se modifique este límite no se podrá subir y desplegar la aplicación.
 
@@ -104,7 +104,7 @@ Es necesario modificar el tamaño máximo de subida del manager de Tomcat; el ta
 
 ![Segunda_Ventana_Manager_Tomcat](/tomcat/image10.png)
 
-  #### 5. Subimos mediante el manager el archivo .war de OpenCMS
+  #### Subimos mediante el manager el archivo .war de OpenCMS
 
 ![ManagerWeb_Tomcat](/tomcat/image15.png)
 
@@ -112,7 +112,7 @@ Y una vez subido, aparece desplegado con el resto de aplicaciones...
 
 ![ManagerWeb_Tomcat2](/tomcat/image2.png)
 
-  6. #### Crear un usuario para OpenCMS en MySQL, instalación del conector de Java para MySQL
+  #### Crear un usuario para OpenCMS en MySQL, instalación del conector de Java para MySQL
 OpenCMS necesita un usuario para crear y gestionar sus bases de datos, lo creamos mediante el terminal.
 
 ![MySQL_Tomcat](/tomcat/image11.png)
@@ -125,7 +125,7 @@ Además, para comunicar Java con MySQL, necesitamos instalar un conector especí
 
 ![MySQL_Java](/tomcat/image9.png)
 
-  7. #### Instalación de OpenCMS
+  #### Instalación de OpenCMS
 
 Accedemos a la configuración con la ruta
 
@@ -167,17 +167,17 @@ Y, por último, se nos redirige a la página principal de OpenCMS
 ## SSH, información, instalación y funcionamiento.
 - Jesús Roca Obispo
 
-1. #### Definición.
+  #### Definición.
 
 SSH es ampliamente conocido por ser el protocolo seguro para la administración remota de servidores, routers, switches y un largo etcétera de equipos. El protocolo SSH permite manejar por completo el servidor o dispositivo de red mediante un intérprete de órdenes, además, también podemos redirigir el tráfico de X para ejecutar programas gráficos a través de la propia sesión SSH.
 
-2. #### Otras características fundamentales.
+  #### Otras características fundamentales.
 
 Podemos copiar de manera segura, tanto archivos como carpetas, a través del protocolo SFTP, un protocolo hecho desde cero y que no tiene nada que ver con FTPS o FTPES.
 
 El protocolo SSH proporciona confidencialidad (datos encriptados, cifrados punto a punto), autenticación (con usuario/contraseña, claves pública/privada), integridad (si los datos se modifican o los modifica un usuario malintencionado se podrá detectar).
 
-3. #### Instalación de OpenSSH y funcionamiento en ubuntu.
+  #### Instalación de OpenSSH y funcionamiento en ubuntu.
 
 Primero actualizamos los paquetes:
 
@@ -221,7 +221,7 @@ Luego nos pedirá la contraseña del equipo al que queremos acceder.
 ## Instalación y Configuración MySQL Server
 - Raúl Fernández Arce
 
-1. #### Instalamos MySQL-server por linea de comandos.
+  #### Instalamos MySQL-server por linea de comandos.
 
 `sudo apt install mysql-server`
 
@@ -229,7 +229,7 @@ Nos saltará la siguiente imagen, solo debemos seguir las indicaciones.
 
 ![Primera_Ventana_mysqlServer](/mysqlServidor/mysqlserver1.png)
 
-2. #### Realizamos la instalación segura de MySQL mediante el siguiente comando, para darle una contraseña al root y editar algunos parámetros:
+  #### Realizamos la instalación segura de MySQL mediante el siguiente comando, para darle una contraseña al root y editar algunos parámetros:
 
 `sudo mysql_secure_installation`
 
@@ -249,7 +249,7 @@ Y al escribir la contraseña nos pedirá que confirmemos una serie de parámetro
 
 ![Instalación_segura](/mysqlServidor/mysqlserver4.png)
 
-3. #### Iniciamos sesión y creamos los usuarios
+  #### Iniciamos sesión y creamos los usuarios
 
 Para iniciar sesión usamos el comando:
 
@@ -287,7 +287,7 @@ Y con esto ya hemos finalizado la instalación y configuración de los usuarios 
 
 ## Creación de la Página en Github
 
-1. #### Creación del Repositorio
+  #### Creación del Repositorio
 
 Primero debemos crear un repositorio en nuestra cuenta de Github que tenga de nombre el nombre de la página seguido de github.io
 
@@ -311,7 +311,7 @@ Nos creará un fichero que nos explica como se escribe en markdown y ese es el q
 
 ![Fichero_Page](/githubPage/github9.png)
 
-2. #### Clonación del repositorio en VSCode
+  #### Clonación del repositorio en VSCode
 
 Pulsamos F1 cuando nos encontramos dentro del VSCode y escribimos clone
 
