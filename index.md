@@ -25,7 +25,7 @@ _Realizado por Ahmed_
 - [Mysql Server](#mysql)
 _Realizado por Raúl Arce_
 
-- [Github Page](#githubPage)
+- [Github Page](#git)
 _Realizado por Raúl Arce_
 
 ## Servidores a Desplegar | Requisitos
@@ -283,10 +283,7 @@ Ahora damos permisos a los usuarios para que puedan tener todos los permisos en 
 
 Y con esto ya hemos finalizado la instalación y configuración de los usuarios de MySQL server
 
-```markdown
-Syntax highlighted code block
-
-<a name="githubPage"></a>
+<a name="git"></a>
 
 ## Creación de la Página en Github
 
@@ -327,6 +324,9 @@ Seleccionamos el repositorio a clonar
 Elegimos el directorio en que queremos clonarlo de nuestro equipo, y a partir de ahí ya podemos editar el fichero.
 
 ![FinVSCODE](/githubPage/github12.png)
+
+```markdown
+Syntax highlighted code block
 
 # Header 1
 ## Header 2
