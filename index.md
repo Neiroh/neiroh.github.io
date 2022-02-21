@@ -189,7 +189,7 @@ Para instalar SSH:
 
 Configuración del servidor SSH, se ubica en /etc/ssh/sshd_config:
 
-INSERTAR CAPTURA SSH1
+![captura fichero SSH](/ssh/SSH1.png)
 
 Para configurar las claves criptográficas configuramos el directorio: /home/usuario/.ssh/
 
