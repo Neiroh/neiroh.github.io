@@ -25,7 +25,7 @@ _Realizado por Ahmed_
 - [Mysql Server](#mysql)
 _Realizado por Raúl Arce_
 
-- Página de Github
+- [Github Page](#githubPage)
 _Realizado por Raúl Arce_
 
 ## Servidores a Desplegar | Requisitos
@@ -285,6 +285,48 @@ Y con esto ya hemos finalizado la instalación y configuración de los usuarios 
 
 ```markdown
 Syntax highlighted code block
+
+<a name="githubPage"></a>
+
+## Creación de la Página en Github
+
+1. #### Creación del Repositorio
+
+Primero debemos crear un repositorio en nuestra cuenta de Github que tenga de nombre el nombre de la página seguido de github.io
+
+Podemos añadir una descripción, la visibilidad de la página y el README, si lo creamos y no hay ningún index en el repositorio se visualizará automáticamente el README.md
+
+![Creacion_Repositorio](/githubPage/github1.png)
+
+Después podemos editar el fichero README.md, en mi caso lo he nombrado index para mayor comodidad.
+
+![Edicion_Fichero](/githubPage/github4.png)
+
+Hacemos el commit para guardar los cambios
+
+![Commit_Fichero](/githubPage/github5.png)
+
+Nos vamos a la configuración del repositorio y vamos a la sección Pages en la barra de navegación izquierda. y ponemos un tema, que es el que tendrá la página
+
+![Tema_Repo](/githubPage/github7.png)
+
+Nos creará un fichero que nos explica como se escribe en markdown y ese es el que se subirá
+
+![Fichero_Page](/githubPage/github9.png)
+
+2. #### Clonación del repositorio en VSCode
+
+Pulsamos F1 cuando nos encontramos dentro del VSCode y escribimos clone
+
+![Clona](/githubPage/github10.png)
+
+Seleccionamos el repositorio a clonar
+
+![Repo](/githubPage/github11.png)
+
+Elegimos el directorio en que queremos clonarlo de nuestro equipo, y a partir de ahí ya podemos editar el fichero.
+
+![FinVSCODE](/githubPage/github12.png)
 
 # Header 1
 ## Header 2
