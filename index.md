@@ -162,7 +162,7 @@ Y, por último, se nos redirige a la página principal de OpenCMS
 
 ## FTP + Creación de Usuarios
 
-#### Creación de usuarios
+### Creación de usuarios
 
 Usuario GLPI
 ![usuario_glpi](/ftp/1.png)
@@ -173,7 +173,7 @@ Usuario Moodle
 Usuario Opencms
 ![usuario_opencms](/ftp/3.png)
 
-#### Añadimos a los usuarios
+### Añadimos a los usuarios
 
 Añadimos al uduario glpi, la ruta de home, debe apuntar a /var/www/carpeta. Esto pasa con todos.
 ![añadiendo_glpi](/ftp/4.png)
@@ -190,7 +190,7 @@ Añadimos al usuario bbdd.
 Comprobamos que los usuarios se hayan creado dentro del fichero /etc/proftpd/ftpd.passwd.
 ![comprobando_usuarios](/ftp/yyy.png)
 
-#### Instalacion de PROFTPD (SERVIDOR FTP)
+### Instalacion de PROFTPD (SERVIDOR FTP)
 
 Para instalar el servidor de FTP, utilizaremos el siguiente comando.
 ![Instalacion del servidor](/ftp/9.png)
@@ -215,7 +215,7 @@ Incluimos los usuarios como podemos ver entre las etiquetas limit LOGUIN, y auto
 Creamos una clave para el acceso seguro del servidor con el siguiente comando.
 ![clave_encriptacion](/ftp/xxx.png)
 
-#### En el caso de que os de fallo por inicio seguro, hacer los siguientes pasos:
+### En el caso de que os de fallo por inicio seguro, hacer los siguientes pasos:
 
 EL motivo por el que falla, es que en la instalacion, hay paquetes que faltan y son requeridos, de esta forma lo instalaremos de forma automatica.
 
@@ -224,6 +224,8 @@ Instalamos el paquete proftpd-mod-crypto.
 
 Una vez instalado, dentro del fichero modules.conf, descomentamos la siguiente linea.
 ![configuranc_mod_crypto](/ftp/15.png)
+
+### Conexion al servidor
 
 Conecandonos desde filezilla al seridor.
 ![conectando_servidor](/ftp/16.png)
