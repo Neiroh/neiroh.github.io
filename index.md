@@ -195,7 +195,7 @@ Comprobamos que los usuarios se hayan creado dentro del fichero /etc/proftpd/ftp
 Para instalar el servidor de FTP, utilizaremos el siguiente comando.
 ![Instalacion del servidor](/ftp/9.png)
 
-#### Configuracion necesaria para el servidor
+### Configuracion necesaria para el servidor
 
 Con esta linea descomentado dentro del archivo de configuracion de proftpd, lo que conseguimos es que no sea requerido una shell valida.
 ![RequireValidShell](/ftp/10.png)
