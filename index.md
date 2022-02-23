@@ -312,7 +312,7 @@ Luego nos pedirá la contraseña del equipo al que queremos acceder.
 ## PHP
 - Ahmed Mohamed Ahmed
 
-###Instalamos PHP7.4 por linea de comandos
+### Instalamos PHP7.4 por linea de comandos
 
 `sudo apt install php7.4`
 
@@ -324,6 +324,15 @@ Además para más tarde evitar problemas con phpMyAdmin instalaramos las extensi
 Una vez instaladas las extensiones tendremos que activarlas en el archivo php.ini en la ruta /etc/php/7.4/apache2/php.ini
 
 ![php.ini](/bp/ini.png)
+
+### Instalamos phpMyAdmin por linea de comandos
+
+`sudo apt install phpMyAdmin`
+
+Una vez tenemos php7.4 y las extensiones necesarias instaladas junto con phpMyAdmin añadimos esta linea al final del archivo /etc/apache2/apache2.conf:
+
+`Include /etc/phpmyadmin/apache.conf`
+
 
 <a name="mysql"></a>
 
