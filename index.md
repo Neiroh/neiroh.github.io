@@ -169,14 +169,13 @@ Y reiniciamos el servidor de apache:
 
 `sudo systemctl reload apache2.service`
 
-Por ultimo debemos acceder al fichero /etc/hosts y añadir la IP denuestro servidor y el nombre del siito Virtual:
+Por ultimo debemos acceder al fichero /etc/hosts y añadir la IP de nuestro servidor y el nombre de nuestro sitio virtual:
 
 `192.168.9.195    opencms.com`
 
 Para comprobar que funciona podemos ir a nuestro navegador y escibir en la barra:
 
 `opencms.com`
-
 
 <a name="docker"></a>
 
