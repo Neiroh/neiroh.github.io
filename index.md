@@ -181,6 +181,56 @@ Añadimos al uduario glpi, la ruta de home, debe apuntar a /var/www/carpeta. Est
 Añadimos al usuario moodle.
 ![añadiendo_moodle](/ftp/5.png)
 
+Añadimos al usuario opencms.
+![añadiendo_opencms](/ftp/6.png)
+
+Añadimos al usuario bbdd.
+![añadiendo_bbdd](/ftp/7.png)
+
+Comprobamos que los usuarios se hayan creado dentro del fichero /etc/proftpd/ftpd.passwd.
+![comprobando_usuarios](/ftp/yyy.png)
+
+#### Instalacion de PROFTPD (SERVIDOR FTP)
+
+Para instalar el servidor de FTP, utilizaremos el siguiente comando.
+![Instalacion del servidor](/ftp/9.png)
+
+#### Configuracion necesaria para el servidor
+
+Con esta linea descomentado dentro del archivo de configuracion de proftpd, lo que conseguimos es que no sea requerido una shell valida.
+![RequireValidShell](/ftp/10.png)
+
+Añadimos una ruta por defecto para enjaular a los usuarios y no tengan acceso a todo el servidor.
+![ruta_por_defecto](/ftp/123.png)
+
+Habilitamos el modulo de TLS, para trabajar de forma segura con nuestro servidor.
+![actibamos_modulo_tls](/ftp/11.png)
+
+Modificamos esta linea, para que cuando se logueen los usuarios, sea requerida una clave a traves de ficheros, que son los configurados anteriormente.
+![requiere_fichero_contraseñas](/ftp/12.png)
+
+Incluimos los usuarios como podemos ver entre las etiquetas limit LOGUIN, y autorizamos que los usuarios se logueen con clave desde el fichero /etc/proftpd/ftpd.passwd.
+![añadir_final_archivo](/ftp/13.png)
+
+Creamos una clave para el acceso seguro del servidor con el siguiente comando.
+![clave_encriptacion](/ftp/xxx.png)
+
+#### En el caso de que os de fallo por inicio seguro, hacer los siguientes pasos:
+
+EL motivo por el que falla, es que en la instalacion, hay paquetes que faltan y son requeridos, de esta forma lo instalaremos de forma automatica.
+
+Instalamos el paquete proftpd-mod-crypto.
+![instalando_mod_crypto](/ftp/14.png)
+
+Una vez instalado, dentro del fichero modules.conf, descomentamos la siguiente linea.
+![configuranc_mod_crypto](/ftp/15.png)
+
+Conecandonos desde filezilla al seridor.
+![conectando_servidor](/ftp/16.png)
+
+Aceptamos, una vez aceptado, ya tendriamos acceso al servidor.
+![accediendo_servidor](/ftp/17.png)
+
 
 <a name="ssh"></a>
 
