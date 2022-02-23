@@ -300,7 +300,7 @@ Además para más tarde evitar problemas con phpMyAdmin instalaramos las extensi
 
 Una vez instaladas las extensiones tendremos que activarlas en el archivo php.ini en la ruta /etc/php/7.4/apache2/php.ini
 
-![php.ini]()
+![php.ini](/bp/ini.png)
 
 <a name="mysql"></a>
 
