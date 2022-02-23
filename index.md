@@ -287,6 +287,20 @@ Luego nos pedirá la contraseña del equipo al que queremos acceder.
 <a name="php"></a>
 
 ## PHP
+- Ahmed Mohamed Ahmed
+
+###Instalamos PHP7.4 por linea de comandos
+
+`sudo apt install php7.4`
+
+Además para más tarde evitar problemas con phpMyAdmin instalaramos las extensiones mbstring y mysqli de php
+
+`sudo apt install php7.4-mysqli`
+`sudo apt install php7.4-mbstring`
+
+Una vez instaladas las extensiones tendremos que activarlas en el archivo php.ini en la ruta /etc/php/7.4/apache2/php.ini
+
+![php.ini]()
 
 <a name="mysql"></a>
 
