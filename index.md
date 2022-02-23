@@ -161,6 +161,18 @@ El fichero debe contener las siguientes directivas:
 
 ![Redirect OpenCMS](/tomcat/opencmsRedirect.png)
 
+Luego usamos el comando a2ensite para habiliar nuestra web:
+
+`sudo a2ensite opencms.conf`
+
+Y reiniciamos el servidor de apache:
+
+`sudo systemctl reload apache2.service`
+
+Para comprobar que funciona podemos ir a nuestro navegador y escibir en la barra:
+
+`opencms.com`
+
 <a name="docker"></a>
 
 ## Docker
