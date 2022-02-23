@@ -159,7 +159,7 @@ Deberemos crear un fichero dentro de /etc/apache2/sites-available/ llamado openc
 
 El fichero debe contener las siguientes directivas:
 
-![Redirect OpenCMS]()
+![Redirect OpenCMS](/tomcat/opencmsRedirect.png)
 
 <a name="docker"></a>
 
