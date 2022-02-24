@@ -251,10 +251,10 @@ Una vez instalado, dentro del fichero modules.conf, descomentamos la siguiente l
 
 ### Conexion al servidor
 
-Conecandonos desde filezilla al seridor.
+Conectandonos desde filezilla al servidor.
 ![conectando_servidor](/ftp/16.png)
 
-Aceptamos, una vez aceptado, ya tendriamos acceso al servidor.
+Aceptamos, una vez aceptado, ya tendríamos acceso al servidor.
 ![accediendo_servidor](/ftp/17.png)
 
 
