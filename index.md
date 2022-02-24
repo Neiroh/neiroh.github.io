@@ -154,7 +154,7 @@ Y, por último, se nos redirige a la página principal de OpenCMS
 ![Setup_OpenCMSUser](/tomcat/image14.png)
 
 #### Redireccionar OpenCMS del puerto 80 al 8081
-- Jesús Roca Obispo & Raúl Arce.
+- Jesús Roca Obispo
 
 Deberemos crear un fichero dentro de /etc/apache2/sites-available/ llamado opencms.conf
 
@@ -251,10 +251,10 @@ Una vez instalado, dentro del fichero modules.conf, descomentamos la siguiente l
 
 ### Conexion al servidor
 
-Conectandonos desde filezilla al servidor.
+Conecandonos desde filezilla al seridor.
 ![conectando_servidor](/ftp/16.png)
 
-Aceptamos, una vez aceptado, ya tendríamos acceso al servidor.
+Aceptamos, una vez aceptado, ya tendriamos acceso al servidor.
 ![accediendo_servidor](/ftp/17.png)
 
 
@@ -334,6 +334,17 @@ Una vez tenemos php7.4 y las extensiones necesarias instaladas junto con phpMyAd
 
 `Include /etc/phpmyadmin/apache.conf`
 
+### Montamos un Sitio Virtual con su propio usuario
+
+Creamos el usuario bbdd:
+
+`sudo adduser bbdd`
+
+Y le asignamos una carpeta home, en este caso 
+
+`sdo usermod -d /var/www/phpmyadmin bbdd`
+
+### Montamos
 
 <a name="mysql"></a>
 
