@@ -154,6 +154,7 @@ Y, por último, se nos redirige a la página principal de OpenCMS
 ![Setup_OpenCMSUser](/tomcat/image14.png)
 
 #### Redireccionar OpenCMS del puerto 80 al 8081
+- Jesús Roca Obispo
 
 Deberemos crear un fichero dentro de /etc/apache2/sites-available/ llamado opencms.conf
 
