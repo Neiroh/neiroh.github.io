@@ -11,7 +11,7 @@ _Realizado por Emilio_
 _Realizado por José Carlos_
 
 - [Docker](#docker)
-_Realizado por Jesús Ruiz_
+_Realizado por Jesús Ruiz y Jose Carlos_
 
 - [FTP Server](#ftp)
 _Realizado por Josema_
