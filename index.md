@@ -745,6 +745,8 @@ Elegimos el directorio en que queremos clonarlo de nuestro equipo, y a partir de
 
 ![FinVSCODE](/githubPage/github12.png)
 
+Ahora, una vez guardados los cambios pulsamos F1, escribimos commit, añadimos el mensaje del commit, y, pulsando F1 de nuevo, escribimos push, para aplicar los cambios al repositorio de la nube
+
 ```markdown
 Syntax highlighted code block
 
