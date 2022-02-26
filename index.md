@@ -5,28 +5,31 @@ Esta página web estática contiene todas las tareas que hemos ido realizando en
 ## Listado de Componentes Necesarios y sus Responsables
 
 - [Apache HTTPD Server](#httpd)
-_Realizado por Emilio_
+_Realizado y documentado por Emilio_
+_Traducido a lenguaje MD por Raúl_
 
 - [Apache Tomcat](#tomcat)
-_Realizado por José Carlos_
+_Realizado, documentado y traducido a MD por José Carlos_
 
 - [Docker](#docker)
 _Realizado por Jesús Ruiz y Jose Carlos_
+_Documentado por Jesús Ruiz_
+_Traducido a lenguaje MD por Raúl_
 
 - [FTP Server](#ftp)
-_Realizado por Josema_
+_Realizado, documentado y traducido a MD por Josema_
 
 - [SSH](#ssh)
-_Realizado por Jesús Roca_
+_Realizado, documentado y traducido a MD por Jesús Roca_
 
 - [PHP](#php)
-_Realizado por Ahmed_
+_Realizado, documentado y traducido a MD por Ahmed_
 
 - [Mysql Server](#mysql)
-_Realizado por Raúl Arce_
+_Realizado, documentado y traducido a MD por Raúl Arce_
 
 - [Github Page](#git)
-_Realizado por Raúl Arce_
+_Realizado, documentado y traducido a MD por Raúl Arce_
 
 ## Servidores a Desplegar | Requisitos
 
