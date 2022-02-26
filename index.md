@@ -85,50 +85,50 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 
 Descargamos GLPI, lo descomprimimos y lo llevamosal directorio de /var/www/glpi y comprobamos que los archivos estén ahí.
 
-
+![descarga](./apache/glpi/1.png)
 
 Creamos el archivo de configuración de GLPI.
 
-
+![creacion](./apache/glpi/2.png)
 
 Activamos el sitio de conf y reiniciamosapache
 
 ```
-sudo a2ensite archivo.conf
+sudo a2ensite glpi.conf
 sudo systemctl restart apache2
 ```
 
 Dejamos que el ufw permita a Apache
 
-
+![ufw](./apache/glpi/4.png)
 
 Entramos al archivo 000-default y cambiamos el DocumentRoot a /var/www/
 
-
+![default](./apache/glpi/5.png)
 
 Hacemos el VirtualHost de _inventario.puertas.local.conf_ y que refirija a GLPI en HTTP.
 
-
+![virtualHost](./apache/glpi/6.png)
 
 Habilitamos el sitio creado y reiniciamos apache
 
-
+![habilita](./apache/glpi/7.png)
 
 Hacemos el certificado con la siguiente línea y reiniciamos Apache.
 
-
+![certificado](./apache/glpi/8.png)
 
 Hacemos la firma en el archivo CRT de la siguiente manera:
 
-
+![firma](./apache/glpi/9.png)
 
 Hacemos el VirtualHost que redirigirá al GLPI en https usando los certificados que acabamos de crear.
 
+![httpsRedirect](./apache/glpi/10.png)
 
+Y comprobamos en el navegador que se ha aplicado el certificado que hemos creado, la página que se ve de fondo es una prueba para mostrar el certificado, ahora veremos la página a la que nos lleva.
 
-Y comprobamosen el navegadorque se ha aplicado el certificado que hemos creado, la página que se ve de fondo es una prueba para mostrar el certificado, ahora veremos la página a la que nos lleva.
-
-
+![comprueba](./apache/glpi/11.png)
 
 Antes de entrar a la página vamos a necesitar instalar algunos paquetes de PHP cuyos comandos son los siguientes:
 
@@ -149,104 +149,106 @@ sudo apt install php7.4-xmlrpc
 Una vez hecho ya todo esto, accedemos al sitio que hemos configurado y vamos a poder realizar el setup desde ahí.
 En primer lugar nos pedir el idioma deseado.
 
-
+![acceso](./apache/glpi/21.png)
 
 Posteriormente nos pedirá leer y aceptar la licencia.
 
-
+![licencia](./apache/glpi/22.png)
 
 A continuación nos dar la opción de actualizar o instalar, en nuestro caso lo instalaremos.
 
-
+![instala](./apache/glpi/23.png)
 
 Posteriormente se comprobarará que todos los paquetes que se necesitan estn instalados.
 
+![paquetes](./apache/glpi/24.png)
 
+La siguiente pestaña que veremos es la de los parámetros de conexión a la base de datos donde meteremos los datos que nos piden.
 
-La siguiente pestaña que veremos es la delos parámetros de conexión a la base de datos donde meteremos los datos que nos piden.
-
-
+![parametros](./apache/glpi/25.png)
 
 Luego hará una comprobación de la conexión a la base de datos.
 
-
+![db](./apache/glpi/26.png)
 
 Más tarde, tendremos que darle a continuar en los siguientes 3 pasos.
 
-
+![continuar](./apache/glpi/27.png)
+![continuar2](./apache/glpi/28.png)
+![continuar3](./apache/glpi/29.png)
 
 Y ya nos saldrá la pestaña de utilizar GLPI, botón el cuál pulsaremos.
 
+![boton](./apache/glpi/30.png)
 
+Una vez hecho todo esto, tendremos que introducir el usuario y la contraseña (glpi los dos) y podremos acceder.
 
-Una vez hecho todo esto, tendremos que introducir el usuario y la contraeña (GLPI los dos) y podremos acceder.
+![passwd](./apache/glpi/31.png)
+![passwd](./apache/glpi/32.png)
 
 #### Moodle
 
 Creamos la carpeta y le damos los permisos
 
-
+![creacion](./apache/moodle/1.png)
 
 Clonamos dentro de la carpeta _/opt_ desde git el repositorio de Moodle
 
-
+![clonacion](./apache/moodle/2.png)
 
 Listamos todas las ramas disponibles e indicamos la rama que vamos a usar, y le hacemos un checkout a la persión moddle especificada
 
+![ramas1](./apache/moodle/3.png)
+![ramas2](./apache/moodle/4.png)
 
+Lo copiamos a su directorio en /var/www/
 
-
-
-Lo copiamos a si directorio en /var/www/
-
-
+![copiaDir](./apache/moodle/5.png)
 
 Creamos el repositorio de moodledata y le damos permisos
 
-
+![permisos](./apache/moodle/6.png)
 
 Creamos el VirtualHost en 80, sin que redirija al sitio seguro, como se nos pide en el ejercicio, lo habilitamos y reiniciamos apache
 
-
-
-
+![virtualHost](./apache/moodle/7.png)
+![virtualHost2](./apache/moodle/8.png)
 
 Ahora creamos los certificados que usaremos para el sitio seguro y hacemos la firma en el archivo CRT.
 
-
-
-
+![certificados](./apache/moodle/9.png)
+![certificadosFirma](./apache/moodle/10.png)
 
 Posteriormente crearemos el VirtualHost del sitio seguro en 433 de la siguiente manera
 
-
+![433](./apache/moodle/11.png)
 
 Al entrar al sitio creado, lo primero que nos saldrá es la configuración del idioma; una vez puesto, le daremos.
 Ahora nos pedirá confirmar las rutas para acceder a moodle y le daremos a "siguiente".
 
+![siguiente](./apache/moodle/13.png)
+
 Acto seguido nos pedirá el controlador de la base de datos, donde elegiremos MySQL y le daremos a "siguiente"
 
-
+![controladorDB](./apache/moodle/14.png)
 
 Una vez hecho eso nos pedirá introducir los datos de ajustes de la base de datos, y una vez introducidos le daremos a "siguiente".
 
-
+![ajustesDB](./apache/moodle/15.png)
 
 Nos encontramos ya dentro de la moodle, pero aún nos queda un poco de recorrido, tendremos que ir hacia abajo de la página y darle a "continuar".
 
-
-
-
+![continua](./apache/moodle/16.png)
+![continua](./apache/moodle/17.png)
 
 Posteriormente, nos mostrará unos _checks_ de los plugins y tendremos que, de nuevo, irnos hacia abajo y darle upgrade.
 
+![upgrade1](./apache/moodle/18.png)
+![upgrade2](./apache/moodle/19.png)
 
+Más tarde, nos mostrará que la versión se ha actualizado correctamente.
 
-
-
-Más tarde, nos mostrará que la versión se ha actualizadp correctamente.
-
-
+![version](./apache/moodle/20.png)
 
 Una vez hecho esto, ya solo habría que esperar y tendríamos nuestro sitio listo.
 
