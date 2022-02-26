@@ -374,7 +374,7 @@ _MySQL_
 
 Una vez configurados todos los parámetros en el docker-compose.yaml, nos metemos por línea de comandos a la carpeta donde se encuentra dicho archivo y hacemos:
 
-ˋdocker-compose upˋ
+`docker-compose up`
 
 Y con eso ya hemos montado el contenedor
 
