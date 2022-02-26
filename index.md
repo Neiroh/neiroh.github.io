@@ -617,8 +617,50 @@ sudo adduser bbdd
 Y le asignamos una carpeta home, en este caso 
 
 ```
-sdo usermod -d /var/www/phpmyadmin bbdd
+sudo usermod -d /var/www/phpmyadmin bbdd
 ```
+Ahora vamos a crear el fichero de configuración de nuestro sitio virtual
+
+![.conf](/bp/5.png)
+
+Vamos a crear los ficheros para los logs de errores que he puesto en el fichero anterior (es opcional si usamos los que hay por defecto)
+
+![logs](/bp/6.png)
+
+Activamos el sitio y reiniciamos el apache para asegurarnos de que todo esta correcto
+
+![active](/bp/7.png)
+
+En el fichero de etc/hosts de la maquina desde la que entramos por navegador añadimos el alias a nuestro VH
+
+`sudo nano /etc/hosts` `192.168.9.195   mysql.puertas.local`
+
+Una vez hecho esto ya podriamos entrar
+
+![in](/bp/8.png)
+
+### VH sitio seguro
+
+Para hacer que nuesto sitio virtual sea 'seguro' lo primero es activar el ssl en nuestro apache
+
+`sudo a2enmod sll`
+
+Creamos una carpeta (si no existe) para guardar nuestros certificados y le damos permisos para evitar problemas, por ejemplo
+
+`sudo mkdir /etc/apache2/certificados` `sudo chmod 777 -R /etc/apache2/certificados`
+
+Una vez tenemos la carpeta creamos los certificados de esta manera
+
+![certs](/bp/10.png)
+
+Los añadimos al fichero de configuracion de nuestro vh
+
+![.conf2](/bp/11.png)
+
+Y ya estaría
+
+![in2](/bp/12.png)
+
 
 ### Montamos
 
