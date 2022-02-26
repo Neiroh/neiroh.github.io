@@ -79,7 +79,63 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 
 <a name="httpd"></a>
 
-## Apache HTTPD Server
+## Apache HTTPD Server (GLPI)
+
+Descargamos GLPI, lo descomprimimos y lo llevamosal directorio de /var/www/glpi y comprobamos que los archivos estén ahí.
+
+Creamos el archivo de configuración de GLPI.
+
+Activamos el sitio de conf y reiniciamosapache
+
+ˋsudo a2ensite archivo.confˋ
+ˋsudo systemctl restart apache2ˋ
+
+Dejamos que el ufw permita a Apache
+
+Entramos al archivo 000-default y cambiamos el DocumentRoot a /var/www/
+
+Hacemos el VirtualHost de _inventario.puertas.local.conf_ y que refirija a GLPI en HTTP.
+
+Habilitamos el sitio creado y reiniciamos apache
+
+Hacemos el certificado con la siguiente línea y reiniciamos Apache.
+
+Hacemos la firma en el archivo CRT de la siguiente manera:
+
+Hacemos el VirtualHost que redirigirá al GLPI en https usando los certificados que acabamos de crear.
+
+Y comprobamosen el navegadorque se ha aplicado el certificado que hemos creado, la página que se ve de fondo es una prueba para mostrar el certificado, ahora veremos la página a la que nos lleva.
+
+Antes de entrar a la página vamos a necesitar instalar algunos paquetes de PHP cuyos comandos son los siguientes:
+
+ˋsudo apt install php7.4-intlˋ
+ˋsudo apt install php7.4-curlˋ
+ˋsudo apt install php7.4-gdˋ
+ˋsudo apt install php7.4-simplexmlˋ
+ˋsudo apt install php7.4-apcuˋ
+ˋsudo apt install php7.4-ldapˋ
+ˋsudo apt install php7.4-zipˋ
+ˋsudo apt install php7.4-bz2ˋ
+ˋsudo apt install php7.4-xmlrpcˋ
+
+Una vez hecho ya todo esto, accedemos al sitio que hemos configurado y vamos a poder realizar el setup desde ahí.
+En primer lugar nos pedir el idioma deseado.
+
+Posteriormente nos pedirá leer y aceptar la licencia.
+
+A continuación nos dar la opción de actualizar o instalar, en nuestro caso lo instalaremos.
+
+Posteriormente se comprobarará que todos los paquetes que se necesitan estn instalados.
+
+La siguiente pestaña que veremos es la delos parámetros de conexión a la base de datos donde meteremos los datos que nos piden.
+
+Luego hará una comprobación de la conexión a la base de datos.
+
+Más tarde, tendremos que darle a continuar en los siguientes 3 pasos.
+
+Y ya nos saldrá la pestaña de utilizar GLPI, botón el cuál pulsaremos.
+
+Una vez hecho todo esto, tendremos que introducir el usuario y la contraeña (GLPI los dos) y podremos acceder.
 
 <a name="tomcat"></a>
 
