@@ -4,7 +4,11 @@ Esta página web estática contiene todas las tareas que hemos ido realizando en
 
 ## Listado de Componentes Necesarios y sus Responsables
 
-- [Apache HTTPD Server](#httpd)
+- [Apache HTTPD Server (GLPI)](#glpi)
+_Realizado y documentado por Emilio_
+_Traducido a lenguaje MD por Raúl Arce_
+
+- [Apache HTTPD Server (MOODLE)](#moodle)
 _Realizado y documentado por Emilio_
 _Traducido a lenguaje MD por Raúl Arce_
 
@@ -77,11 +81,9 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 ---
 ---
 
-<a name="httpd"></a>
+<a name="glpi"></a>
 
 ## Apache HTTPD Server (GLPI)
-
-#### GLPI
 
 Descargamos GLPI, lo descomprimimos y lo llevamosal directorio de /var/www/glpi y comprobamos que los archivos estén ahí.
 
@@ -186,7 +188,9 @@ Una vez hecho todo esto, tendremos que introducir el usuario y la contraseña (g
 ![passwd](./apache/glpi/31.png)
 ![passwd](./apache/glpi/32.png)
 
-#### Moodle
+<a name="moodle"></a>
+
+## Apache HTTPD Server (Moodle)
 
 Creamos la carpeta y le damos los permisos
 
