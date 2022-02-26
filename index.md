@@ -93,8 +93,10 @@ Creamos el archivo de configuración de GLPI.
 
 Activamos el sitio de conf y reiniciamosapache
 
-`sudo a2ensite archivo.conf`
-`sudo systemctl restart apache2`
+```
+sudo a2ensite archivo.conf
+sudo systemctl restart apache2
+```
 
 Dejamos que el ufw permita a Apache
 
@@ -131,7 +133,8 @@ Y comprobamosen el navegadorque se ha aplicado el certificado que hemos creado, 
 Antes de entrar a la página vamos a necesitar instalar algunos paquetes de PHP cuyos comandos son los siguientes:
 
 
-`sudo apt install php7.4-intl
+```
+sudo apt install php7.4-intl
 sudo apt install php7.4-curl
 sudo apt install php7.4-gd
 sudo apt install php7.4-simplexml
@@ -139,7 +142,8 @@ sudo apt install php7.4-apcu
 sudo apt install php7.4-ldap
 sudo apt install php7.4-zip
 sudo apt install php7.4-bz2
-sudo apt install php7.4-xmlrpc`
+sudo apt install php7.4-xmlrpc
+```
 
 
 Una vez hecho ya todo esto, accedemos al sitio que hemos configurado y vamos a poder realizar el setup desde ahí.
