@@ -181,6 +181,64 @@ Para comprobar que funciona podemos ir a nuestro navegador y escibir en la barra
 <a name="docker"></a>
 
 ## Docker
+- Jesús Ruiz Rodríguez
+
+#### Creación de contenedores Prestashop con Docker
+
+Hacemos un docker-compose en la que creamosuna red, una base de datos y 4 contenedores de Prestashop conectados a esa base de datos
+
+_Prestashop_
+
+*Nombre de la Red:* mistiendas
+*Nombre de los contenedores de Prestashop:* prestashop-1.7.8-01, prestashop-1.7.8-02, prestashop-1.7.8-03, prestashop-1.7.8-04
+*Nombre del contenedor de MySQL:* mysql
+*Imagen Prestashop:* prestasho/prestashop:1.7.8
+*Puertos prestashop:* 8090, 8091, 8092, 8093
+*DB_server:* prestasho-1.7.8-mysql
+
+_MySQL_
+
+*Imagen MySQL:* mysql:5.7
+*Puerto MySQL:* 4206
+*MYSQL_ROOT_PASSWORD:* aa
+
+![code](./docker/code.png)
+
+Una vez configurados todos los parámetros en el docker-compose.yaml, nos metemos por línea de comandos a la carpeta donde se encuentra dicho archivo y hacemos:
+
+ˋdocker-compose upˋ
+
+Y con eso ya hemos montado el contenedor
+
+#### Configuración de Prestashop
+
+Al Iniciar la configuración nos pide el idioma
+
+![idioma](./docker/2.png)
+
+Después nos pide informacin que le queremos poner a la tienda como el nombre, la temática, país de residencia,...
+
+![infoTienda](./docker/3.png)
+
+Al rellenar la información aparecerá un asistente de instalacin. Lo único a destacar es la dirección del servidor de base de datos que ha de ser el nombre del contenedor de MySQL.
+
+![mysql](./docker/4.png)
+
+Y se nos mostraráun aviso de fin de instalación.
+
+![fin](./docker/5.png)
+
+Podremos acceder mediante el puerto al index de nuestra página tal que así:
+
+![inicio](./docker/6.png)
+
+Para ello tendremos que configurar algunos VirtualHosts para acceder a cada uno de los contenedores, para ello accederemos a
+
+/etc/apache2/sites-available/[nombreVirtualHost].conf
+
+A destacar el alias con www para que no haya problema al acceder mediante ese dominio y la redireccin se hace a la [ipMaquina]:8093/index.php de prestashop.
+
+![virtual](./docker/15.png)
 
 <a name="ftp"></a>
 
