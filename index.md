@@ -633,7 +633,10 @@ Activamos el sitio y reiniciamos el apache para asegurarnos de que todo esta cor
 
 En el fichero de etc/hosts de la maquina desde la que entramos por navegador añadimos el alias a nuestro VH
 
-`sudo nano /etc/hosts` `192.168.9.195   mysql.puertas.local`
+```
+sudo nano /etc/hosts
+192.168.9.195   mysql.puertas.local
+```
 
 Una vez hecho esto ya podriamos entrar
 
@@ -643,11 +646,16 @@ Una vez hecho esto ya podriamos entrar
 
 Para hacer que nuesto sitio virtual sea 'seguro' lo primero es activar el ssl en nuestro apache
 
-`sudo a2enmod sll`
+```
+sudo a2enmod sll
+```
 
 Creamos una carpeta (si no existe) para guardar nuestros certificados y le damos permisos para evitar problemas, por ejemplo
 
-`sudo mkdir /etc/apache2/certificados` `sudo chmod 777 -R /etc/apache2/certificados`
+```
+sudo mkdir /etc/apache2/certificados
+sudo chmod 777 -R /etc/apache2/certificados
+```
 
 Una vez tenemos la carpeta creamos los certificados de esta manera
 
