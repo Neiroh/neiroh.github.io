@@ -177,7 +177,74 @@ Y ya nos saldrá la pestaña de utilizar GLPI, botón el cuál pulsaremos.
 
 Una vez hecho todo esto, tendremos que introducir el usuario y la contraeña (GLPI los dos) y podremos acceder.
 
+#### Moodle
 
+Creamos la carpeta y le damos los permisos
+
+
+
+Clonamos dentro de la carpeta _/opt_ desde git el repositorio de Moodle
+
+
+
+Listamos todas las ramas disponibles e indicamos la rama que vamos a usar, y le hacemos un checkout a la persión moddle especificada
+
+
+
+
+
+Lo copiamos a si directorio en /var/www/
+
+
+
+Creamos el repositorio de moodledata y le damos permisos
+
+
+
+Creamos el VirtualHost en 80, sin que redirija al sitio seguro, como se nos pide en el ejercicio, lo habilitamos y reiniciamos apache
+
+
+
+
+
+Ahora creamos los certificados que usaremos para el sitio seguro y hacemos la firma en el archivo CRT.
+
+
+
+
+
+Posteriormente crearemos el VirtualHost del sitio seguro en 433 de la siguiente manera
+
+
+
+Al entrar al sitio creado, lo primero que nos saldrá es la configuración del idioma; una vez puesto, le daremos.
+Ahora nos pedirá confirmar las rutas para acceder a moodle y le daremos a "siguiente".
+
+Acto seguido nos pedirá el controlador de la base de datos, donde elegiremos MySQL y le daremos a "siguiente"
+
+
+
+Una vez hecho eso nos pedirá introducir los datos de ajustes de la base de datos, y una vez introducidos le daremos a "siguiente".
+
+
+
+Nos encontramos ya dentro de la moodle, pero aún nos queda un poco de recorrido, tendremos que ir hacia abajo de la página y darle a "continuar".
+
+
+
+
+
+Posteriormente, nos mostrará unos _checks_ de los plugins y tendremos que, de nuevo, irnos hacia abajo y darle upgrade.
+
+
+
+
+
+Más tarde, nos mostrará que la versión se ha actualizadp correctamente.
+
+
+
+Una vez hecho esto, ya solo habría que esperar y tendríamos nuestro sitio listo.
 
 <a name="tomcat"></a>
 
