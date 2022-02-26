@@ -6,7 +6,7 @@ Esta página web estática contiene todas las tareas que hemos ido realizando en
 
 - [Apache HTTPD Server](#httpd)
 _Realizado y documentado por Emilio_
-_Traducido a lenguaje MD por Raúl_
+_Traducido a lenguaje MD por Raúl Arce_
 
 - [Apache Tomcat](#tomcat)
 _Realizado, documentado y traducido a MD por José Carlos_
@@ -14,7 +14,7 @@ _Realizado, documentado y traducido a MD por José Carlos_
 - [Docker](#docker)
 _Realizado por Jesús Ruiz y Jose Carlos_
 _Documentado por Jesús Ruiz_
-_Traducido a lenguaje MD por Raúl_
+_Traducido a lenguaje MD por Raúl Arce_
 
 - [FTP Server](#ftp)
 _Realizado, documentado y traducido a MD por Josema_
@@ -81,6 +81,8 @@ usuario del sistema, FTP, SSH y para su base de datos de MySQL.
 
 ## Apache HTTPD Server (GLPI)
 
+#### GLPI
+
 Descargamos GLPI, lo descomprimimos y lo llevamosal directorio de /var/www/glpi y comprobamos que los archivos estén ahí.
 
 Creamos el archivo de configuración de GLPI.
@@ -108,15 +110,17 @@ Y comprobamosen el navegadorque se ha aplicado el certificado que hemos creado, 
 
 Antes de entrar a la página vamos a necesitar instalar algunos paquetes de PHP cuyos comandos son los siguientes:
 
-ˋsudo apt install php7.4-intlˋ
-ˋsudo apt install php7.4-curlˋ
-ˋsudo apt install php7.4-gdˋ
-ˋsudo apt install php7.4-simplexmlˋ
-ˋsudo apt install php7.4-apcuˋ
-ˋsudo apt install php7.4-ldapˋ
-ˋsudo apt install php7.4-zipˋ
-ˋsudo apt install php7.4-bz2ˋ
-ˋsudo apt install php7.4-xmlrpcˋ
+ˋ
+sudo apt install php7.4-intl
+sudo apt install php7.4-curl
+sudo apt install php7.4-gd
+sudo apt install php7.4-simplexml
+sudo apt install php7.4-apcu
+sudo apt install php7.4-ldap
+sudo apt install php7.4-zip
+sudo apt install php7.4-bz2
+sudo apt install php7.4-xmlrpc
+ˋ
 
 Una vez hecho ya todo esto, accedemos al sitio que hemos configurado y vamos a poder realizar el setup desde ahí.
 En primer lugar nos pedir el idioma deseado.
