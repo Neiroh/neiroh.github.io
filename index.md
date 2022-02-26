@@ -661,13 +661,17 @@ Una vez tenemos la carpeta creamos los certificados de esta manera
 
 ![certs](/bp/10.png)
 
+Y los firmamos
+
+![firma](/bp/11.png)
+
 Los añadimos al fichero de configuracion de nuestro vh
 
-![.conf2](/bp/11.png)
+![.conf2](/bp/12.png)
 
 Y ya estaría
 
-![in2](/bp/12.png)
+![in2](/bp/13.png)
 
 
 ### Montamos
