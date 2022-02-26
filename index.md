@@ -256,7 +256,9 @@ Una vez hecho esto, ya solo habría que esperar y tendríamos nuestro sitio list
 - Jose Carlos Vicario Cobos
   
 #### Instalamos el servidor Tomcat y todos sus componentes mediante la terminal
-   `sudo apt install tomcat9*`
+   ```
+   sudo apt install tomcat9*
+   ```
 
 ![Comando_Tomcat](/tomcat/image4.png)
 
@@ -291,7 +293,9 @@ OpenCMS necesita un usuario para crear y gestionar sus bases de datos, lo creamo
 
 Además, para comunicar Java con MySQL, necesitamos instalar un conector específico. Para poder instalar este paquete, primero necesitaremos añadirlo con el comando
 
-`sudo dpkg -i mysql-connector-java_8.0.28-1ubuntu21.10_all.deb`
+```
+sudo dpkg -i mysql-connector-java_8.0.28-1ubuntu21.10_all.deb
+```
 
 ![MySQL_DPKGJava](/tomcat/image16.png)
 
@@ -301,7 +305,9 @@ Además, para comunicar Java con MySQL, necesitamos instalar un conector especí
 
 Accedemos a la configuración con la ruta
 
-`/opencms/setup`
+```
+/opencms/setup
+```
 
 ![Setup_OpenCMS](/tomcat/image12.png)
 
@@ -336,19 +342,27 @@ El fichero debe contener las siguientes directivas:
 
 Luego usamos el comando a2ensite para habiliar nuestra web:
 
-`sudo a2ensite opencms.conf`
+```
+sudo a2ensite opencms.conf
+```
 
 Y reiniciamos el servidor de apache:
 
-`sudo systemctl reload apache2.service`
+```
+sudo systemctl reload apache2.service
+```
 
 Por ultimo debemos acceder al fichero /etc/hosts y añadir la IP de nuestro servidor y el nombre de nuestro sitio virtual:
 
-`192.168.9.195    opencms.com`
+```
+192.168.9.195    opencms.com
+```
 
 Para comprobar que funciona podemos ir a nuestro navegador y escibir en la barra:
 
-`opencms.com`
+```
+opencms.com
+```
 
 <a name="docker"></a>
 
@@ -378,7 +392,9 @@ _MySQL_
 
 Una vez configurados todos los parámetros en el docker-compose.yaml, nos metemos por línea de comandos a la carpeta donde se encuentra dicho archivo y hacemos:
 
-`docker-compose up`
+```
+docker-compose up
+```
 
 Y con eso ya hemos montado el contenedor
 
@@ -406,7 +422,7 @@ Podremos acceder mediante el puerto al index de nuestra página tal que así:
 
 Para ello tendremos que configurar algunos VirtualHosts para acceder a cada uno de los contenedores, para ello accederemos a
 
-/etc/apache2/sites-available/[nombreVirtualHost].conf
+_/etc/apache2/sites-available/[nombreVirtualHost].conf_
 
 A destacar el alias con www para que no haya problema al acceder mediante ese dominio y la redireccin se hace a la [ipMaquina]:8093/index.php de prestashop.
 
@@ -507,11 +523,15 @@ El protocolo SSH proporciona confidencialidad (datos encriptados, cifrados punto
 
 Primero actualizamos los paquetes:
 
-`sudo apt update`
+```
+sudo apt update
+```
 
 Para instalar SSH:
 
-`sudo apt install openssh-server`
+```
+sudo apt install openssh-server
+```
 
 Configuración del servidor SSH, se ubica en /etc/ssh/sshd_config:
 
@@ -521,19 +541,27 @@ Para configurar las claves criptográficas configuramos el directorio: /home/usu
 
 Para arrancar el servidor usamos el comando:
 
-`sudo /etc/init.d/ssh start`
+```
+sudo /etc/init.d/ssh start
+```
 
 Para pararlo:
 
-`sudo /etc/init.d/ssh stop`
+```
+sudo /etc/init.d/ssh stop
+```
 
 Para reiniciar el servidor:
 
-`sudo /etc/init.d/ssh restart`
+```
+sudo /etc/init.d/ssh restart
+```
 
 Para acceder a otro equipo mediante SSH usamos el comando:
 
-`ssh “nombre usuario”@”IP:servidor”`
+```
+ssh “nombre usuario”@”IP:servidor”
+```
 
 Luego nos pedirá la contraseña del equipo al que queremos acceder.
 
@@ -545,12 +573,16 @@ Luego nos pedirá la contraseña del equipo al que queremos acceder.
 
 ### Instalamos PHP7.4 por linea de comandos
 
-`sudo apt install php7.4`
+```
+sudo apt install php7.4
+```
 
 Además para más tarde evitar problemas con phpMyAdmin instalaramos las extensiones mbstring y mysqli de php
 
-`sudo apt install php7.4-mysqli`
-`sudo apt install php7.4-mbstring`
+```
+sudo apt install php7.4-mysqli
+sudo apt install php7.4-mbstring
+```
 
 Una vez instaladas las extensiones tendremos que activarlas en el archivo php.ini en la ruta /etc/php/7.4/apache2/php.ini
 
@@ -558,21 +590,29 @@ Una vez instaladas las extensiones tendremos que activarlas en el archivo php.in
 
 ### Instalamos phpMyAdmin por linea de comandos
 
-`sudo apt install phpMyAdmin`
+```
+sudo apt install phpMyAdmin
+```
 
 Una vez tenemos php7.4 y las extensiones necesarias instaladas junto con phpMyAdmin añadimos esta linea al final del archivo /etc/apache2/apache2.conf:
 
-`Include /etc/phpmyadmin/apache.conf`
+```
+Include /etc/phpmyadmin/apache.conf
+```
 
 ### Montamos un Sitio Virtual con su propio usuario
 
 Creamos el usuario bbdd:
 
-`sudo adduser bbdd`
+```
+sudo adduser bbdd
+```
 
 Y le asignamos una carpeta home, en este caso 
 
-`sdo usermod -d /var/www/phpmyadmin bbdd`
+```
+sdo usermod -d /var/www/phpmyadmin bbdd
+```
 
 ### Montamos
 
@@ -583,7 +623,9 @@ Y le asignamos una carpeta home, en este caso
 
 #### Instalamos MySQL-server por linea de comandos.
 
-`sudo apt install mysql-server`
+```
+sudo apt install mysql-server
+```
 
 Nos saltará la siguiente imagen, solo debemos seguir las indicaciones.
 
@@ -591,7 +633,9 @@ Nos saltará la siguiente imagen, solo debemos seguir las indicaciones.
 
 #### Realizamos la instalación segura de MySQL mediante el siguiente comando, para darle una contraseña al root y editar algunos parámetros:
 
-`sudo mysql_secure_installation`
+```
+sudo mysql_secure_installation
+```
 
 El resultado de escribir ese comando es la solicitud de una contraseña para el usuario root de MySQL
 
@@ -613,13 +657,17 @@ Y al escribir la contraseña nos pedirá que confirmemos una serie de parámetro
 
 Para iniciar sesión usamos el comando:
 
-`sudo mysql -u root -p`
+```
+sudo mysql -u root -p
+```
 
 Tras esto nos solicitará la contraseña que hemos escrito al realizar la instalación segura, y al ingresarla nos abrirá la línea de comandos de mysql server.
 
 Al crear usuarios, si queremos usar contraseñas no seguras, deberemos escribir el siguiente comando:
 
-`UNINSTALL COMPONENT "file://component_validate_password";`
+```
+UNINSTALL COMPONENT "file://component_validate_password";
+```
 
 Y con esto podremos usar la contraseña que queramos, sin importar su seguridad, algo que hemos puesto en práctica para la creación de nuestros usuarios.
 
@@ -627,7 +675,9 @@ Y con esto podremos usar la contraseña que queramos, sin importar su seguridad,
 
 Y con la consulta
 
-`SELECT user FROM mysql.user;`
+```
+SELECT user FROM mysql.user;
+```
 
 podemos visualizar los usuarios que tenemos creados
 
@@ -635,11 +685,15 @@ podemos visualizar los usuarios que tenemos creados
 
 Y al finalizar la creación de usuarios instalamos el componente de validación de contraseñas de nuevo:
 
-`INSTALL COMPONENT "file://component_validate_password"`
+```
+INSTALL COMPONENT "file://component_validate_password"
+```
 
 Ahora damos permisos a los usuarios para que puedan tener todos los permisos en el acceso y las bases de datos con el comando:
 
-`GRANT ALL ON *.* TO "usuario"@"localhost";`
+```
+GRANT ALL ON *.* TO "usuario"@"localhost";
+```
 
 Y con esto ya hemos finalizado la instalación y configuración de los usuarios de MySQL server
 
