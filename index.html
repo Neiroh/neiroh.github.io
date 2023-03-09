@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Web de Ciencias</title>
+  <meta name="description" content="
+      Formulario de registro para nuestra aplicación" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/svg.css" />
+</head>
+
+<body>
+  <header>
+    <svg id="atomosvg" width="200" height="150" viewBox="0 0 250 250">
+
+      <ellipse cx="150" cy="50" rx="120" ry="40" />
+      <ellipse cx="30" cy="150" rx="120" ry="40" />
+      <ellipse cx="100" cy="120" rx="40" ry="120" />
+      <circle cx="100" cy="115" r="15" />
+
+    </svg>
+    <h1>Tu Web de Ciencias</h1>
+  </header>
+
+  <nav>
+    <a href="#notas">
+      <p>Notas</p>
+    </a>
+    <a href="#video">
+      <p>Videos</p>
+    </a>
+    <a href="#podcasts">
+      <p>Podcasts</p>
+    </a>
+  </nav>
+
+  <main>
+
+    <section id="notas" class="notas">
+
+      <h2>Notas del curso 2022-2023</h2>
+
+      <p>Buenas, mis queridísimos alumnos. Aquí tienen las notas del grado que están realizando. Enhorabuena, Juan,
+        espero que te vaya estupendamente el curso que viene.</p>
+
+      <p>María, nos vemos en junio, más suerte para la próxima, te he suspendido porque sé que tú puedes dar más,
+        esfuérzate para la próxima ^^</p>
+
+      <table>
+
+        <tr>
+          <th colspan="2">Asignatura</th>
+          <th>Juan</th>
+          <th>María</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Biología</td>
+          <td>Práctica</td>
+          <td>A</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>Teoría</td>
+          <td>A+</td>
+          <td>B+</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Química</td>
+          <td>Práctica</td>
+          <td>B</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>Teoría</td>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Física</td>
+          <td>Práctica</td>
+          <td>A</td>
+          <td>A-</td>
+        </tr>
+        <tr>
+          <td>Teoría</td>
+          <td>B-</td>
+          <td>A</td>
+        </tr>
+      </table>
+
+    </section>
+
+    <hr>
+
+    <section id="video" class="videoSection">
+
+      <h2>Videos 100tíficos</h2>
+
+      <p>Aquí algunas ayudas para clase en los dos siguientes videos. De aquí voy a sacar las preguntas del examen</p>
+
+      <div class="media">
+        <video src="./video/Microscope_5__Scientist__Videvo.mov" width="40%" preload="auto" controls></video>
+
+        <iframe width="40%" height="350px" src="https://www.youtube.com/embed/vzopTRZzh-Y" frameborder="0"></iframe>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <section id="podcasts" class="podcasts">
+
+      <h2>Podcast Resumen</h2>
+
+      <p>Os dejo por aquí un podcast que resume el temario visto en clase con algunas características más que pueden
+        caer en el examen</p>
+      <p>Prestad mucha atención, es un tema muy curioso e importante, ya que os puede server en el futuro cuando seáis
+        unos adultos, a lo mejor os preguntan algo de esto cuando vayáis a comprar el pan</p>
+
+      <audio controls src="./audio/BBCInsideScience-20230119-TowardsNetZero.mp3"></audio>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <address>Calle de la cuesta n1 Piso de abajo</address>
+  </footer>
+</body>
+
+</html>
