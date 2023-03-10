@@ -19,7 +19,6 @@ h2 {
 form {
     background-color: #46598738;
     padding: 20px;
-    margin-bottom: 5%;
     border-radius: 5px;
     width: 35%;
     display: flex;
@@ -31,6 +30,12 @@ form {
 section {
     width: 100%;
     padding: 2% 0;
+}
+
+.fullname {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .origin {
