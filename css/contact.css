@@ -45,24 +45,8 @@ input[type="email"] {
     border: 1px solid black;
 }
 
-.fullname input {
-    width: 170px;
-}
-
 .email {
     width: 100%;
-}
-
-.emailInput {
-    width: 410px;
-}
-
-label[for="puestoInput"] {
-    margin-right: 10px;
-}
-
-#puestoInput {
-    width: 410px;
 }
 
 textarea {
