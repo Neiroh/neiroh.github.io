@@ -30,7 +30,7 @@
         <a href="../index.html">Home</a>
         <a href="#projects">Projects</a>
         <a href="#design">Design Repository</a>
-        <a href="./pages/contact.html">Contact me!</a>
+        <a href="#">Contact me!</a>
         <a href="./pages/about.html">About me</a>
 
     </nav>
@@ -41,7 +41,7 @@
 
         <form action="https://formsubmit.co/raulfarce01@gmail.com" method="post">
 
-            <section class="fullname" id="fullname">
+            <!-- <section class="fullname" id="fullname">
                 <div class="fullname1">
                     <label for="nombre">Name: </label>
                     <input type="text" name="name" id="name" required>
@@ -82,6 +82,59 @@
             <section class="buttonsForm" id="buttonForms">
                 <input type="submit" name="submitButton" id="submitButton" value="Send form">
             </section>
+
+        </form>
+    -->
+
+            <table>
+
+                <tr>
+                    <td class="col1">Name: </td>
+                    <td class="col2"><input type="text" name="name" id="name" placeholder="Ex. Peter" required></td>
+                    <td class="col1 surname">Surname: </td>
+                    <td class="col2"> <input type="text" name="surname" id="surname" placeholder="Ex. Pan" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col1">Email: </td>
+                    <td class="col2" colspan="3"> <input type="email" name="emailInput" id="emailInput"
+                            class="emailInput" placeholder="Ex. myemail@hotmail.es">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col" colspan="2">
+                        <div class="radio">
+                            <input type="radio" name="company" id="enterprise" value="enterprise">
+                            <label for="enterprise">Enterprise</label>
+                        </div>
+                    </td>
+
+                    <td class="col" colspan="2">
+                        <div class="radio">
+                            <input type="radio" name="company" id="person" value="person">
+                            <label for="person">Person</label>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr id="puesto">
+                    <td class="col1">Role: </td>
+                    <td class="col2" colspan="3"> <input type="text" name="puestoInput" id="puestoInput"
+                            class="puestoInput" placeholder="Ex. Fullstack Developer">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">
+                        <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Coment here..."></textarea>
+                    </td>
+                </tr>
+
+            </table>
+
+            <input type="submit" value="Send form" class="submitButton" id="submitButton">
 
         </form>
 

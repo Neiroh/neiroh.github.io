@@ -1,23 +1,23 @@
 var person = document.getElementById("person");
 var enterprise = document.getElementById("enterprise");
-var puesto = document.getElementById("puesto");
+var puesto = document.getElementById("puestoInput");
 
-puesto.style.display = "none";
+puesto.disabled = true;
 
 enterprise.addEventListener("click", function () {
     console.log("punto");
 
     if (!enterprise.checked) {
 
-        console.log("Punto2");
+        console.log("disabled");
 
-        puesto.style.display = "none";
+        puesto.disabled = true;
 
     } else {
 
-        console.log("punto3");
+        console.log("enabled");
 
-        puesto.style.display = "flex";
+        puesto.disabled = false;
 
     }
 
@@ -26,15 +26,15 @@ enterprise.addEventListener("click", function () {
 person.addEventListener("click", () => {
     if (person.checked) {
 
-        console.log("Punto2");
+        console.log("disabled");
 
-        puesto.style.display = "none";
+        puesto.disabled = true;
 
     } else {
 
-        console.log("punto3");
+        console.log("enabled");
 
-        puesto.style.display = "flex";
+        puesto.disabled = false;
 
     }
 });
