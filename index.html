@@ -5,15 +5,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potfolio Raúl Fernández</title>
+    <title>Potfolio Raul Fernandez</title>
     <meta name="description"
         content="A page in which I'll publish my portfolio, some of my design projects and my curriculum vitae">
     <meta name="keywords" content="portfolio, uidesign, curriculum vitae, projects">
+    <script src="https://kit.fontawesome.com/339ad83339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
 
-    <a href="pages/contact.html">Contact me!</a>
+    <header>
+        <section class="socialMedia" id="home">
+            <a href="https://github.com/raulfarce01" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/raulfarce" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </section>
+
+        <h1>UI design Portfolio</h1>
+        <h2>Author: Raúl Fernández Arce</h2>
+    </header>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#design">Design Repository</a>
+        <a href="./pages/contact.html">Contact me!</a>
+        <a href="./pages/about.html">About me</a>
+
+    </nav>
+
+    <main>
+
+        <section class="introduction" id="introduction">
+
+            <p>Welcome to my portfolio. Here I'm showing you my projects for you to check if you are interested in my
+                profile.
+            </p>
+            <p>All the pages have been coded and designed by me. you will be able to check more details about every
+                project in the <b><i>"view more"</i></b> button of any project</p>
+            <p>I've used native JS, HTML and native CSS to desing this frontend</p>
+            <p>The styles used have been based on my biggest and favourite project called <b><i>Yumeanime</i></b></p>
+
+            <!--<hr>-->
+
+        </section>
+
+        <section class="projects" id="projects">
+
+            <h2>My Projects</h2>
+
+            <div class="project yumeanime">
+                <div class="text right">
+                    <p>This project was my <i>End of Grade</i> project done in the <b><i>Superior degree of Web
+                                Application
+                                Development</i></b>. This page consists in a anime site in which you can read some
+                        informations and news about animes you are interested in.</p>
+
+                    <p>It took me 2 months and a half to develop, once I finished it I felt really prideful because it's
+                        a big project and it could be bigger</p>
+
+                    <div class="link">
+                        <a href="./pages/yumeanime.html"><button class="viewMore yumeView" id="viewMore">View
+                                more</button></a>
+                    </div>
+                </div>
+
+                <div class="imgContainer">
+                    <img src="./images/yumeanime/yumeanime.png" alt="yumeanime website" class="yumeanimeImg left">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="project fallon">
+                <div class="text left">
+                    <p>One day, I was talking to a friend that was studying in the university and he was looking for a
+                        way to develop a website because he was interested in have one for his <b><i>end of
+                                grade</i></b> project. He was studying the career <i>Business Administration and
+                            Management</i> and once he told me, I offered as a developer for his page</p>
+                    <p>We were meeting for one week to talk about that, and at least we could elaborate together a big
+                        idea. The professor was the user that navigates, and she was really surprised abour our work. At
+                        least we decided not to publish that because
+                        we are developing and upgrade for the page to use the definitive version in his <b><i>master
+                                degree</i></b></p>
+
+                    <div class="link"><a href="./pages/fallon.html"><button class="viewMore fallonView"
+                                id="viewMore">View
+                                more</button></a></div>
+                </div>
+
+                <div class="imgContainer">
+                    <img src="./images/fallon/fallon.png" alt="Fallon website" class="fallonImg right">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="project galor">
+
+                <div class="text right">
+                    <p>At the end of the superior degree, our teacher told us to make a project with some colleagues,
+                        and after thinking for a looooooong time, we decided to make an art gallery in which users could
+                        comment, like and look for some artistic
+                        pictures.
+                    </p>
+                    <p>My principal role in this teamwork was fullstack, I was the one who created some PHP code, native
+                        JS and checked and fix some CSS problems. It was my first project, and the first time I worked
+                        as a team at coding</p>
+
+                    <div class="link">
+                        <a href="./pages/yumeanime.html"><button class="viewMore galorView" id="viewMore">View
+                                more</button></a>
+                    </div>
+                </div>
+
+                <div class="imgContainer">
+                    <img src="./images/galor/portada.png" alt="Galor website" class="galorImg left">
+                </div>
+
+            </div>
+
+            <!--<hr>-->
+
+        </section>
+
+        <section class="design" id="design">
+
+            <h2>Design Repository</h2>
+
+            <div class="text">
+                <p>In this section, i'll leave a link to go to my <a href="https://github.com/raulfarce01/DIW">Web
+                        Interface
+                        Design</a> repository for my second course of Web Applications Development.</p>
+                <p>There you have all the content we learned that year, but I'm increasing my knowledge by coursing a
+                    Master Degree of <b><i>Fullstack Web Development</i></b></p>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="data">
+            <div class="phone">605363470</div>
+            <div class="locality">Ceuta, Spain</div>
+        </div>
+
+        <div class="contact">
+            <a href="./pages/contact.html">Contact me!</a>
+        </div>
+
+    </footer>
 
 </body>
 

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 0;
+    background-color: whitesmoke;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+
+/*hr:first-of-type {
+    margin-top: 20px;
+}*/
+
+.introduction {
+    padding-bottom: 2%;
+    width: 98%;
+    text-align: center;
+}
+
+section.projects {
+    width: 98%;
+    background-color: #0A1940;
+    color: whitesmoke;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.projects>h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imgContainer {
+    background-color: #465987;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    width: 600px;
+}
+
+.project {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 10px;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+
+.link {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    order: 0;
+}
+
+.right {
+    order: 1;
+}
+
+a {
+    text-decoration: none;
+    width: fit-content;
+}
+
+.design {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.design .text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.design .text a {
+    color: #ff5c5c;
+}
+
+
+/*.yumeanime {
+    background-color: #2e3c5f;
+    color: whitesmoke;
+}
+
+.fallon {
+    background-color: #5f4624;
+    color: whitesmoke;
+}
+
+.galor {
+    background-color: #4b9dc6;
+}*/
+
+.viewMore {
+    color: whitesmoke;
+    width: 150px;
+    height: 50px;
+    background-color: #465987;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 0.8em;
+}
+
+.viewMore:hover {
+    background-color: #5f6c8a;
+}
+
+.text p:first-of-type {
+    margin-bottom: 10px;
+}

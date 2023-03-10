@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #0A1940;
+    color: whitesmoke;
+    padding-bottom: 20px;
+    height: 17.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    padding-top: 2%;
+}
+
+.socialMedia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.socialMedia i {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+.socialMedia i:first-child {
+    padding-right: 5px;
+}
+
+a {
+    color: #ff5c5c;
+}

@@ -2,20 +2,39 @@ var person = document.getElementById("person");
 var enterprise = document.getElementById("enterprise");
 var puesto = document.getElementById("puesto");
 
-if (person == null || person.length == 0) {
+puesto.style.display = "none";
 
-    if (enterprise == null || enterprise.length == 0) {
+enterprise.addEventListener("click", function () {
+    console.log("punto");
+
+    if (!enterprise.checked) {
+
+        console.log("Punto2");
 
         puesto.style.display = "none";
 
     } else {
 
+        console.log("punto3");
+
         puesto.style.display = "flex";
 
     }
 
-} else {
+});
 
-    puesto.style.display = "none";
+person.addEventListener("click", () => {
+    if (person.checked) {
 
-}
+        console.log("Punto2");
+
+        puesto.style.display = "none";
+
+    } else {
+
+        console.log("punto3");
+
+        puesto.style.display = "flex";
+
+    }
+});

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #465987;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid black;
+    height: 100%;
+    padding: 0.5% 0;
+    text-decoration: none;
+}
+
+nav a:first-of-type {
+    border: 0;
+}
+
+nav a:hover {
+    background-color: #5f6c8a;
+    /*box-shadow: inset 3px 3px 3px black;
+    font-size: 0.98em;*/
+}
