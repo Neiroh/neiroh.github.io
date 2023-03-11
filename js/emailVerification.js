@@ -18,6 +18,7 @@ var emailInput = document.getElementById("emailInput");
 submitButton.disabled = true;
 
 submitButton.style.backgroundColor = "grey";
+submitButton.style.color = "black";
 
 /**
  *
@@ -31,9 +32,11 @@ emailInput.addEventListener("keyup", function () {
         emailInput.style.border = "1px solid red";
         submitButton.disabled = true;
         submitButton.style.backgroundColor = "grey";
+        submitButton.style.color = "black";
     } else {
         emailInput.style.border = "1px solid black";
         submitButton.disabled = false;
-        submitButton.style.backgroundColor = "#FAF8F7";
+        submitButton.style.backgroundColor = "#0A1940";
+        submitButton.style.color = "white";
     }
 });
