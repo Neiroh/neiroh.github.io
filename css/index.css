@@ -45,10 +45,11 @@ section.projects {
     background-color: #465987;
     padding: 10px;
     border-radius: 5px;
+    width: 100%;
 }
 
 img {
-    width: 600px;
+    width: 100%;
 }
 
 .project {
@@ -132,4 +133,15 @@ img {
 
 .text p:first-of-type {
     margin-bottom: 10px;
+}
+
+@media screen and (min-width:600px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .imgContainer {
+        order: -1;
+        margin-bottom: 10px;
+    }
 }
