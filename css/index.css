@@ -135,7 +135,7 @@ img {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (max-width:600px) {
     .project {
         flex-direction: column;
     }
@@ -143,5 +143,6 @@ img {
     .imgContainer {
         order: -1;
         margin-bottom: 10px;
+        width: 100%;
     }
 }
