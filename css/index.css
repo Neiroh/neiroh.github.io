@@ -83,11 +83,6 @@ img {
     order: 1;
 }
 
-a {
-    text-decoration: none;
-    width: fit-content;
-}
-
 .design {
     padding-top: 20px;
     display: flex;

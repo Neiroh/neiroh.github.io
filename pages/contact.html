@@ -8,6 +8,7 @@
     <title>Contact me!</title>
     <meta name="description" content="Do you want to contact me? This is the site you are looking for">
     <meta name="keywords" content="contact, email, form">
+    <script src="https://kit.fontawesome.com/339ad83339.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/nav.css">
@@ -114,7 +115,7 @@
 
                     <td class="col" colspan="2">
                         <div class="radio">
-                            <input type="radio" name="company" id="person" value="person">
+                            <input type="radio" name="company" id="person" value="person" checked>
                             <label for="person">Person</label>
                         </div>
                     </td>
@@ -129,7 +130,8 @@
 
                 <tr>
                     <td colspan="4">
-                        <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Coment here..."></textarea>
+                        <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Coment here..."
+                            required></textarea>
                     </td>
                 </tr>
 
@@ -153,8 +155,8 @@
         </div>
 
     </footer>
-    <script src="../js/radios.js"></script>
     <script src="../js/emailVerification.js"></script>
+    <script src="../js/radios.js"></script>
 </body>
 
 </html>

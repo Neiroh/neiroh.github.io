@@ -13,11 +13,19 @@ enterprise.addEventListener("click", function () {
 
         puesto.disabled = true;
 
+        if (puesto.disabled == true) {
+            puesto.setAttribute("required", "false")
+        }
+
     } else {
 
         console.log("enabled");
 
         puesto.disabled = false;
+
+        if (puesto.disabled == false) {
+            puesto.setAttribute("required", "true")
+        }
 
     }
 
@@ -30,11 +38,21 @@ person.addEventListener("click", () => {
 
         puesto.disabled = true;
 
+        if (puesto.disabled == true) {
+            puesto.setAttribute("required", "false")
+        }
+
     } else {
 
         console.log("enabled");
 
         puesto.disabled = false;
 
+        if (puesto.disabled == false) {
+            puesto.setAttribute("required", "true")
+        }
+
     }
+
+
 });

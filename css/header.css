@@ -14,6 +14,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 85px;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1 {
     left: 0;
     padding-left: 10px;
     padding-top: 2px;
+    color: whitesmoke;
 }
 
 .socialMedia i {
@@ -39,4 +41,6 @@ h1 {
 
 a {
     color: #ff5c5c;
+    text-decoration: none;
+    width: fit-content;
 }
