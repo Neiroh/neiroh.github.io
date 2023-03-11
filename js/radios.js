@@ -4,6 +4,8 @@ var puesto = document.getElementById("puestoInput");
 
 puesto.disabled = true;
 
+puesto.style.backgroundColor = "#cccccc";
+
 enterprise.addEventListener("click", function () {
     console.log("punto");
 
@@ -17,6 +19,8 @@ enterprise.addEventListener("click", function () {
             puesto.setAttribute("required", "false")
         }
 
+        puesto.style.backgroundColor = "#cccccc";
+
     } else {
 
         console.log("enabled");
@@ -26,6 +30,8 @@ enterprise.addEventListener("click", function () {
         if (puesto.disabled == false) {
             puesto.setAttribute("required", "true")
         }
+
+        puesto.style.backgroundColor = "transparent";
 
     }
 
@@ -42,6 +48,8 @@ person.addEventListener("click", () => {
             puesto.setAttribute("required", "false")
         }
 
+        puesto.style.backgroundColor = "#cccccc";
+
     } else {
 
         console.log("enabled");
@@ -51,6 +59,9 @@ person.addEventListener("click", () => {
         if (puesto.disabled == false) {
             puesto.setAttribute("required", "true")
         }
+
+        puesto.style.backgroundColor = "transparent";
+
 
     }
 
