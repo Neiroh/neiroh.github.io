@@ -75,6 +75,7 @@ main p:last-child {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin-bottom: 40px;
+    height: 400px;
 }
 
 .slider-item {
@@ -87,9 +88,30 @@ img {
     width: 100%;
 }
 
-.slideButton {
-    background-color: #c7ac5d6c;
+.slideButtons {
     color: #583400;
+    width: 85%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #583400;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #C7AD5D;
+}
+
+#imagenes {
+    width: 100%;
     height: 100%;
-    width: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
