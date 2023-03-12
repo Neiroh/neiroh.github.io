@@ -74,7 +74,8 @@ if (!movil) {
     leftButton.disabled = true;
     rightButton.disabled = true;
 
-    slide.removeChild(slideButtons)
+    slideButtons.removeChild(leftButton);
+    slideButtons.removeChild(rightButton);
 
 
     slide.innerHTML = `<img src="../images/fallon/fallon.png" alt="Fallon-Home" class="slider-item">
