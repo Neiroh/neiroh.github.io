@@ -1,0 +1,95 @@
+.fallonHeader,
+.fallonFooter {
+    background-color: #583400;
+}
+
+main {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: #C7AD5D;
+}
+
+h2 {
+    color: #C7AD5D;
+}
+
+main h2 {
+    color: #583400;
+    margin: 20px;
+}
+
+main p {
+    width: 90%;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+main p:last-child {
+    margin-bottom: 30px;
+}
+
+.fallonNav {
+    background-color: #C7AD5D;
+    color: #583400;
+}
+
+.fallonNav a {
+    color: #583400;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fallonNav a:hover {
+    background-color: #c2af77
+}
+
+.textInf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.important {
+    color: #583400;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-container {
+    display: flex;
+    width: 85%;
+    border-radius: 5px;
+    padding: 10px 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 40px;
+}
+
+.slider-item {
+    flex: 0 0 100%;
+    object-fit: contain;
+    scroll-snap-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.slideButton {
+    background-color: #c7ac5d6c;
+    color: #583400;
+    height: 100%;
+    width: 10%;
+}
