@@ -113,10 +113,13 @@ img {
     background-repeat: no-repeat;
 }
 
-
-/*@media screen and (max-width:600) {
-    .slider-container {
-        height: fit-content;
-        min-height: 0;
+@media screen and (max-width:600) {
+    .slideButtons {
+        display: none;
+        margin: 0;
     }
-}*/
+
+    .slider-container {
+        padding: 0;
+    }
+}
