@@ -75,7 +75,6 @@ main p:last-child {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin-bottom: 40px;
-    min-height: 600px;
 }
 
 .slider-item {
@@ -114,8 +113,10 @@ img {
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width:600) {
+
+/*@media screen and (max-width:600) {
     .slider-container {
-        min-height: fit-content;
+        height: fit-content;
+        min-height: 0;
     }
-}
+}*/
