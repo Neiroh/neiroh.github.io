@@ -2,7 +2,6 @@ var leftButton = document.getElementById("leftButton");
 var rightButton = document.getElementById("rightButton");
 var slide = document.getElementById("slider-container");
 var imagenes = document.getElementById("imagenes");
-var slideButtons = document.getElementById("slideButtons");
 
 let navegador = navigator.userAgent;
 
@@ -65,7 +64,7 @@ if (!movil) {
     });
 
     function renderizarImagen() {
-        imagenes.style.backgroundImage = `url(${img[posicionActual]})`;
+        imagenes.innerHTML = "<img src=" + img[posicionActual] + ">";
     }
 } else {
 
