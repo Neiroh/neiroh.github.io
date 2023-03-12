@@ -1,0 +1,125 @@
+.fallonHeader,
+.fallonFooter {
+    background-color: #10A3EB;
+}
+
+main {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+main h2 {
+    color: #256483;
+    margin: 20px;
+}
+
+main p {
+    width: 90%;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+main p:last-child {
+    margin-bottom: 30px;
+}
+
+.fallonNav {
+    background-color: #256483;
+    color: #10A3EB;
+}
+
+.fallonNav a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fallonNav a:hover {
+    background-color: #7cbfe1
+}
+
+.textInf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.important {
+    color: #256483;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-container {
+    display: flex;
+    width: 85%;
+    border-radius: 5px;
+    padding: 10px 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 40px;
+}
+
+.slider-item {
+    flex: 0 0 100%;
+    object-fit: contain;
+    scroll-snap-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.slideButtons {
+    color: #10A3EB;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #10A3EB;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #256483;
+}
+
+.socialMedia a i {
+    color: black;
+}
+
+#imagenes {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:600px) {
+    .slider-container {
+        height: auto;
+        min-height: 0;
+    }
+}
