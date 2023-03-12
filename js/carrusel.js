@@ -71,6 +71,8 @@ if (!movil) {
 
     slide.style.height = "fit-content";
     slideButtons.style.display = "none";
+    leftButton.disabled = true;
+    rightButton.disabled = true;
 
 
     slide.innerHTML = `<img src="../images/fallon/fallon.png" alt="Fallon-Home" class="slider-item">
