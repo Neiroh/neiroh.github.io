@@ -23,12 +23,16 @@ if (!movil) {
     var posicionActual = 0;
 
     const img = [
-        '../images/fallon/fallon.png',
-        '../images/fallon/header.png',
-        '../images/fallon/login.png',
-        '../images/fallon/loginPage.png',
-        '../images/fallon/products.png',
-        '../images/fallon/adicion.png',
+        '../images/yumeanime/yumeanime.png',
+        '../images/yumeanime/news.png',
+        '../images/yumeanime/directory.png',
+        '../images/yumeanime/dedicated.png',
+        '../images/yumeanime/coments.png',
+        '../images/yumeanime/lists.png',
+        '../images/yumeanime/listsIn.png',
+        '../images/yumeanime/moreListsIn.png',
+        '../images/yumeanime/profile.png',
+        '../images/yumeanime/register.png',
     ];
 
     renderizarImagen();
@@ -74,16 +78,24 @@ if (!movil) {
     slideButtons.removeChild(leftButton);
     slideButtons.removeChild(rightButton);
 
-    slide.innerHTML = `<img src="../images/fallon/fallon.png" alt="Fallon-Home" class="slider-item">
+    slide.innerHTML = `<img src="../images/yumeanime/yumeanime.png" alt="Yumeanime-Home" class="slider-item">
 
-    <img src="../images/fallon/header.png" alt="Fallon-Header" class="slider-item">
+    <img src="../images/yumeanime/news.png" alt="Yumeanime-News" class="slider-item">
 
-    <img src="../images/fallon/login.png" alt="Fallon-Login" class="slider-item">
+    <img src="../images/yumeanime/directory.png" alt="Yumeanime-Directory" class="slider-item">
 
-    <img src="../images/fallon/loginPage.png" alt="Fallon-Login-Page" class="slider-item">
+    <img src="../images/yumeanime/dedicated.png" alt="Yumeanime-Dedicated-Anime" class="slider-item">
 
-    <img src="../images/fallon/products.png" alt="Fallon-Products" class="slider-item">
+    <img src="../images/yumeanime/coments.png" alt="Yumeanime-News-Coments" class="slider-item">
 
-    <img src="../images/fallon/adicion.png" alt="Fallon-add-product" class="slider-item">`;
+    <img src="../images/yumeanime/lists.png" alt="Yumeanime-Lists" class="slider-item">
+
+    <img src="../images/yumeanime/listsIn.png" alt="Yumeanime-Lists-In" class="slider-item">
+
+    <img src="../images/yumeanime/moreListsIn.png" alt="Yumeanime-More-In-Lists" class="slider-item">
+
+    <img src="../images/yumeanime/profile.png" alt="Yumeanime-Profile" class="slider-item">
+
+    <img src="../images/yumeanime/register.png" alt="Fallon-Register" class="slider-item">`;
 
 }

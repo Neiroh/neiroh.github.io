@@ -1,6 +1,6 @@
 .fallonHeader,
 .fallonFooter {
-    background-color: #583400;
+    background-color: #0A1940;
 }
 
 main {
@@ -12,15 +12,15 @@ main {
 }
 
 h1 {
-    color: #C7AD5D;
+    color: whitesmoke;
 }
 
 h2 {
-    color: #C7AD5D;
+    color: whitesmoke;
 }
 
 main h2 {
-    color: #583400;
+    color: #0A1940;
     margin: 20px;
 }
 
@@ -36,18 +36,17 @@ main p:last-child {
 }
 
 .fallonNav {
-    background-color: #C7AD5D;
-    color: #583400;
+    background-color: #465987;
+    color: whitesmoke;
 }
 
 .fallonNav a {
-    color: #583400;
-    font-weight: bold;
-    font-size: 1.2em;
+    color: whitesmoke;
+    font-size: 1em;
 }
 
 .fallonNav a:hover {
-    background-color: #c2af77
+    background-color: #7e8cae
 }
 
 .textInf {
@@ -58,7 +57,7 @@ main p:last-child {
 }
 
 .important {
-    color: #583400;
+    color: #0A1940;
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -88,13 +87,12 @@ img {
 }
 
 .slideButtons {
-    color: #583400;
+    color: #0A1940;
     width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-    color: #583400;
     font-size: 2em;
     font-weight: bold;
 }
@@ -104,7 +102,7 @@ img {
 }
 
 .button:hover {
-    color: #C7AD5D;
+    color: whitesmoke;
 }
 
 #imagenes {
@@ -113,7 +111,7 @@ img {
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:600) {
     .slider-container {
         height: auto;
         min-height: 0;
